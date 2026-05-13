@@ -20,7 +20,7 @@ export default function AboutPage() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
           <img
-            src="https://met.com/media/qx1bry3t/generating-electricity-from-natural-gas.jpg&w=1200&auto=format&fit=crop"
+            src="https://met.com/media/qx1bry3t/generating-electricity-from-natural-gas.jpg"
             className="rounded-[40px]"
           />
 
