@@ -30,13 +30,14 @@ export default function AboutPage() {
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              We specialize in helping businesses navigate deregulated energy
-              markets with transparency and efficiency.
+              Founded in 2016, Riz Energy has been helping homes and businesses across Texas find smarter electricity and natural gas solutions at competitive rates. 
+              As a trusted energy broker, we work with leading energy providers to compare plans, secure lower rates, and simplify the switching process for our customers.
             </p>
 
             <p className="text-gray-600 text-lg leading-relaxed">
-              Our mission is to deliver lower energy costs while supporting
-              sustainable energy adoption across the United States.
+              Our goal is to make energy shopping easy, transparent, and cost-effective, so you can focus on what matters most while saving on your monthly utility bills. 
+              With years of industry experience
+              and a commitment to customer satisfaction, Riz Energy continues to serve Texans with reliable energy options tailored to their needs.ates.
             </p>
           </div>
         </div>
