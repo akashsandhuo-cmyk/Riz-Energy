@@ -43,7 +43,7 @@ export default function RizEnergyHomepage() {
           {/* LEFT */}
           <div>
             <div className="inline-flex items-center gap-2 border border-lime-400 bg-lime-50 text-lime-700 rounded-full px-4 py-2 text-sm font-semibold mb-8">
-              ⚡ POWERING BUSINESSES ACROSS TEXAS
+              ⚡ POWERING ACROSS TEXAS
             </div>
 
             <h1 className="text-6xl lg:text-7xl font-black leading-tight mb-8">
@@ -56,7 +56,7 @@ export default function RizEnergyHomepage() {
             </h1>
 
             <p className="text-gray-600 text-xl leading-relaxed mb-10 max-w-xl">
-              RIZ Energy helps businesses across Texas reduce energy costs
+              RIZ Energy helps everyone across Texas reduce energy costs
               with custom electricity and natural gas solutions.
             </p>
 
@@ -110,18 +110,24 @@ export default function RizEnergyHomepage() {
         <div className="max-w-7xl mx-auto px-6 py-10">
 
           <p className="text-center text-sm font-bold text-gray-500 mb-8">
-            POWERING BUSINESSES ACROSS TEXAS
+            OUR BUSINESSES PARTNERS ACROSS TEXAS
           </p>
 
           <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 items-center text-center">
 
             {[
+              'Forntier Utilities',
+              'AGP&E',
+              'Chariot Energy',
+              'Budget Power',
+              'Iron Horse Power Services',
+              'True Power',
               'Constellation',
-              'NRG',
-              'Direct Energy',
-              'Vistra',
-              'Duke Energy',
-              'Engie',
+              'Atlatic Energy',
+              'Branch Energy',
+              'Think Energy!',
+              'Shell Energy',  
+              'CleanSky Energy',
             ].map((brand, index) => (
 
               <div
@@ -300,8 +306,7 @@ export default function RizEnergyHomepage() {
             </div>
 
             <p className="text-2xl leading-relaxed mb-8">
-              RIZ Energy helped us reduce our energy costs by 28% with better
-              rates and outstanding service.
+              Highly recommended company - RIZ ENERGY always works hard to get you the best deal out there.
             </p>
 
             <div className="flex items-center gap-4">
@@ -314,11 +319,11 @@ export default function RizEnergyHomepage() {
 
               <div>
                 <h4 className="font-bold">
-                  John D.
+                  Manni Munir
                 </h4>
 
                 <p className="text-gray-500">
-                  Operations Manager
+                  Our Client
                 </p>
               </div>
 
