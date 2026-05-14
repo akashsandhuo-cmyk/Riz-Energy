@@ -81,7 +81,7 @@ export default function AboutPage() {
         <div className="flex items-center gap-6">
 
           <img
-            src="https://rizenergy.com/images/tt101.png"
+            src="https://randomuser.me/api/portraits/men/45.jpg"
             alt="Riz Nabi"
             className="w-28 h-28 rounded-full object-cover"
           />
@@ -100,10 +100,48 @@ export default function AboutPage() {
 
         </div>
 
-        <p className="text-gray-600 leading-relaxed mt-8">
+        <p className="text-gray-600 leading-relaxed mt-8 mb-8">
           Riz Nabi leads RIZ Energy with a focus on innovation,
           customer satisfaction, and strategic growth across Texas energy markets.
         </p>
+
+        <div className="flex flex-col gap-4">
+
+          {/* EMAIL */}
+          <a
+            href="mailto:riz.nabi@rizenergy.com"
+            className="flex items-center gap-3 text-gray-700 hover:text-orange-500 transition"
+          >
+
+            <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+              ✉️
+            </div>
+
+            <span className="font-medium">
+              riz.nabi@rizenergy.com
+            </span>
+
+          </a>
+
+          {/* LINKEDIN */}
+          <a
+            href="https://www.linkedin.com/in/rizwan-nabi-b941a47?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKry6RkNeTvuetaB%2FUUXPNw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 text-gray-700 hover:text-sky-600 transition"
+          >
+
+            <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center">
+              in
+            </div>
+
+            <span className="font-medium">
+              LinkedIn Profile
+            </span>
+
+          </a>
+
+        </div>
 
       </div>
 
@@ -113,7 +151,7 @@ export default function AboutPage() {
         <div className="flex items-center gap-6">
 
           <img
-            src="https://rizenergy.com/images/akk.jpg"
+            src="https://randomuser.me/api/portraits/men/32.jpg"
             alt="Akash Sandhuo"
             className="w-28 h-28 rounded-full object-cover"
           />
@@ -132,10 +170,48 @@ export default function AboutPage() {
 
         </div>
 
-        <p className="text-gray-600 leading-relaxed mt-8">
+        <p className="text-gray-600 leading-relaxed mt-8 mb-8">
           Akash Sandhuo oversees technology and digital innovation,
           ensuring scalable systems and modern customer experiences for RIZ Energy.
         </p>
+
+        <div className="flex flex-col gap-4">
+
+          {/* EMAIL */}
+          <a
+            href="mailto:akash@rizenergy.com"
+            className="flex items-center gap-3 text-gray-700 hover:text-orange-500 transition"
+          >
+
+            <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+              ✉️
+            </div>
+
+            <span className="font-medium">
+              akash@rizenergy.com
+            </span>
+
+          </a>
+
+          {/* LINKEDIN */}
+          <a
+            href="https://www.linkedin.com/in/akash-sandhuo-72a1a990/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 text-gray-700 hover:text-sky-600 transition"
+          >
+
+            <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center font-bold">
+              in
+            </div>
+
+            <span className="font-medium">
+              LinkedIn Profile
+            </span>
+
+          </a>
+
+        </div>
 
       </div>
 
