@@ -44,6 +44,7 @@ export default function ContactPage() {
 
   return (
     <div>
+
       <Navbar />
 
       {/* HERO */}
@@ -77,25 +78,27 @@ export default function ContactPage() {
 
             <div className="space-y-6 text-lg text-gray-600">
 
-  <p>
-    📧 info@rizenergy.com
-  </p>
+              <p>
+                📧 info@rizenergy.com
+              </p>
 
-  <p>
-    📞 +1 (713) 503-3098
-  </p>
+              <p>
+                📞 +1 (713) 503-3098
+              </p>
 
-  <p>
-    📠 +1 (713) 559-8580
-  </p>
+              <p>
+                📠 +1 (713) 559-8580
+              </p>
 
-  <p>
-    📍 4615 Southwest Fwy, Suite 330
-    <br />
-    Houston, Texas USA 77027
-  </p>
+              <p>
+                📍 4615 Southwest Fwy, Suite 330
+                <br />
+                Houston, Texas USA 77027
+              </p>
 
-</div>
+            </div>
+
+          </div>
 
           {/* FORM */}
           <div>
@@ -182,6 +185,7 @@ export default function ContactPage() {
       </section>
 
       <Footer />
+
     </div>
   )
 }
