@@ -101,7 +101,7 @@ export default function AboutPage() {
         </div>
 
         <p className="text-gray-600 leading-relaxed mt-8 mb-8">
-          Riz Nabi leads RIZ Energy with a focus on innovation,
+          Riz Nabi leads Riz Energy with a focus on innovation,
           customer satisfaction, and strategic growth across Texas energy markets.
         </p>
 
