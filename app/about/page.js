@@ -172,7 +172,7 @@ export default function AboutPage() {
 
         <p className="text-gray-600 leading-relaxed mt-8 mb-8">
           Akash Sandhuo oversees technology and digital innovation,
-          ensuring scalable systems and modern customer experiences for RIZ Energy.
+          ensuring scalable systems and modern customer experiences for Riz Energy.
         </p>
 
         <div className="flex flex-col gap-4">
