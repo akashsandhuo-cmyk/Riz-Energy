@@ -49,7 +49,98 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+{/* TEAM SECTION */}
+<section className="py-24 px-6 bg-gray-50">
 
+  <div className="max-w-7xl mx-auto">
+
+    <div className="text-center mb-20">
+
+      <p className="text-orange-500 font-bold uppercase tracking-widest mb-4">
+        Leadership Team
+      </p>
+
+      <h2 className="text-5xl font-black">
+        Meet Our Team
+      </h2>
+
+      <p className="text-gray-600 text-xl mt-6 max-w-3xl mx-auto">
+        Experienced professionals dedicated to delivering smarter energy solutions.
+      </p>
+
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-10">
+
+      {/* TEAM MEMBER 1 */}
+      <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
+
+        <div className="flex items-center gap-6">
+
+          <img
+            src="https://rizenergy.com/images/tt101.png"
+            alt="Riz Nabi"
+            className="w-28 h-28 rounded-full object-cover"
+          />
+
+          <div>
+
+            <h3 className="text-3xl font-black mb-2">
+              Riz Nabi
+            </h3>
+
+            <p className="text-orange-500 font-bold text-lg">
+              Chief Executive Officer
+            </p>
+
+          </div>
+
+        </div>
+
+        <p className="text-gray-600 leading-relaxed mt-8">
+          Riz Nabi leads RIZ Energy with a focus on innovation,
+          customer satisfaction, and strategic growth across Texas energy markets.
+        </p>
+
+      </div>
+
+      {/* TEAM MEMBER 2 */}
+      <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
+
+        <div className="flex items-center gap-6">
+
+          <img
+            src="https://rizenergy.com/images/akk.jpg"
+            alt="Akash Sandhuo"
+            className="w-28 h-28 rounded-full object-cover"
+          />
+
+          <div>
+
+            <h3 className="text-3xl font-black mb-2">
+              Akash Sandhuo
+            </h3>
+
+            <p className="text-sky-500 font-bold text-lg">
+              Chief Technology Officer
+            </p>
+
+          </div>
+
+        </div>
+
+        <p className="text-gray-600 leading-relaxed mt-8">
+          Akash Sandhuo oversees technology and digital innovation,
+          ensuring scalable systems and modern customer experiences for RIZ Energy.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
       <Footer />
     </div>
   )
