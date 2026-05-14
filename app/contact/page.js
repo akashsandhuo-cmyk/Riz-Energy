@@ -48,7 +48,9 @@ export default function ContactPage() {
 
       {/* HERO */}
       <section className="py-24 px-6 bg-gradient-to-r from-orange-50 to-yellow-50">
+
         <div className="max-w-7xl mx-auto text-center">
+
           <h1 className="text-6xl font-black mb-6">
             Contact Us
           </h1>
@@ -56,25 +58,44 @@ export default function ContactPage() {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Speak with our energy experts today.
           </p>
+
         </div>
+
       </section>
 
       {/* CONTACT */}
       <section className="py-24 px-6">
+
         <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-16">
 
           {/* LEFT */}
           <div>
+
             <h2 className="text-4xl font-black mb-8">
               Get In Touch
             </h2>
 
             <div className="space-y-6 text-lg text-gray-600">
-              <p>📧 info@rizenergy.com</p>
-              <p>📞 (888) 999-7485</p>
-              <p>📍 Houston, Texas</p>
-            </div>
-          </div>
+
+  <p>
+    📧 info@rizenergy.com
+  </p>
+
+  <p>
+    📞 +1 (713) 503-3098
+  </p>
+
+  <p>
+    📠 +1 (713) 559-8580
+  </p>
+
+  <p>
+    📍 4615 Southwest Fwy, Suite 330
+    <br />
+    Houston, Texas USA 77027
+  </p>
+
+</div>
 
           {/* FORM */}
           <div>
@@ -82,6 +103,7 @@ export default function ContactPage() {
             {submitted ? (
 
               <div className="bg-green-50 border border-green-200 rounded-3xl p-10">
+
                 <h3 className="text-3xl font-black text-green-600 mb-4">
                   Thank You!
                 </h3>
@@ -89,6 +111,7 @@ export default function ContactPage() {
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Thank you for your message. We will contact you shortly.
                 </p>
+
               </div>
 
             ) : (
@@ -115,9 +138,10 @@ export default function ContactPage() {
                 />
 
                 <input
-                  type="text"
-                  name="company"
-                  placeholder="Company Name"
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  required
                   className="w-full border border-gray-300 rounded-2xl px-6 py-4"
                 />
 
@@ -154,6 +178,7 @@ export default function ContactPage() {
           </div>
 
         </div>
+
       </section>
 
       <Footer />
