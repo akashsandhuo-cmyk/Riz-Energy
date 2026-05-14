@@ -35,20 +35,23 @@ export default function AboutPage() {
    Our mission is to help customers find competitive energy rates while making the process simple, transparent, and stress-free.
             </p>
 
-            <p className="text-gray-600 text-lg leading-relaxed">
+             <p className="text-gray-600 text-lg leading-relaxed">
               We compare plans from leading energy providers to ensure you get the best option for your home or business. With years of industry expertise, 
    our team understands the energy market and works hard to help customers lower their monthly energy costs.
             </p>
-   <p className="text-gray-600 text-lg leading-relaxed">
+   
+           <p className="text-gray-600 text-lg leading-relaxed">
              Today, customers have more choices than ever beyond their local utility company, and shopping for the right provider can lead to significant savings. 
    Riz Energy acts as your trusted partner by guiding you through the process and helping you choose the energy solution that fits your needs and budget.
             </p>
-   <p className="text-gray-600 text-lg leading-relaxed">
+   
+           <p className="text-gray-600 text-lg leading-relaxed">
              Contact us today and let Riz Energy help you take control of your monthly energy expenses with smarter electricity and natural gas solutions.
             </p>
           </div>
         </div>
       </section>
+  
 {/* TEAM SECTION */}
 <section className="py-24 px-6 bg-gray-50">
 
