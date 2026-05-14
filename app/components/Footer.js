@@ -6,7 +6,8 @@ export default function Footer() {
           <img src="/logo.png" className="h-20 mb-6" alt="logo" />
 
           <p className="text-gray-600 leading-relaxed">
-            Delivering smarter energy solutions across the United States.
+            Delivering smarter energy solutions across the Texas, USA.
+              PUCT Broker License BR250165
           </p>
         </div>
 
