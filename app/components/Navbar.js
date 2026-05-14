@@ -30,16 +30,16 @@ export default function Navbar() {
             About
           </a>
 
-          <a href="/business-energy" className="hover:text-orange-500 transition">
-            Business Energy
+          <a href="/Residential" className="hover:text-orange-500 transition">
+            Residential
           </a>
 
-          <a href="/renewable-energy" className="hover:text-orange-500 transition">
-            Renewable Energy
+          <a href="/Commercial" className="hover:text-orange-500 transition">
+            Commercial
           </a>
 
-          <a href="/resources" className="hover:text-orange-500 transition">
-            Resources
+          <a href="/our-partners" className="hover:text-orange-500 transition">
+            Our-Partners
           </a>
 
           <a href="/careers" className="hover:text-orange-500 transition">
