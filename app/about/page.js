@@ -81,7 +81,7 @@ export default function AboutPage() {
         <div className="flex items-center gap-6">
 
           <img
-            src="https://randomuser.me/api/portraits/men/45.jpg"
+            src="https://rizenergy.com/images/tt101.png"
             alt="Riz Nabi"
             className="w-28 h-28 rounded-full object-cover"
           />
@@ -151,7 +151,7 @@ export default function AboutPage() {
         <div className="flex items-center gap-6">
 
           <img
-            src="https://randomuser.me/api/portraits/men/32.jpg"
+            src="https://rizenergy.com/images/akk.jpg"
             alt="Akash Sandhuo"
             className="w-28 h-28 rounded-full object-cover"
           />
