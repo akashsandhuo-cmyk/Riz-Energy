@@ -20,8 +20,8 @@ export default function AboutPage() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
           <img
-            src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?q=80&w=1200&auto=format&fit=crop"
-            className="rounded-[40px]"
+            src="https://www.airclim.org/sites/default/files/acid-news/2025-07/shutterstock_2388393651_900.jpg"
+            className="rounded-[60px]"
           />
 
           <div>
