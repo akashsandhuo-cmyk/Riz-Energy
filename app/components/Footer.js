@@ -8,7 +8,7 @@ export default function Footer() {
           <p className="text-gray-600 leading-relaxed">
             Delivering smarter energy solutions across the Texas, USA.
           </p>
-    <h3>  PUCT Broker License BR250165 </h3>
+    <h5>  PUCT Broker License BR250165 </h5>
         </div>
 
         <div>
