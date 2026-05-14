@@ -30,14 +30,21 @@ export default function AboutPage() {
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              Founded in 2016, Riz Energy has been helping homes and businesses across Texas find smarter electricity and natural gas solutions at competitive rates. 
-              As a trusted energy broker, we work with leading energy providers to compare plans, secure lower rates, and simplify the switching process for our customers.
+              Founded in 2016, Riz Energy
+ is a trusted electricity and natural gas consulting firm serving residential and commercial customers across deregulated energy markets in Texas. 
+   Our mission is to help customers find competitive energy rates while making the process simple, transparent, and stress-free.
             </p>
 
             <p className="text-gray-600 text-lg leading-relaxed">
-              Our goal is to make energy shopping easy, transparent, and cost-effective, so you can focus on what matters most while saving on your monthly utility bills. 
-              With years of industry experience
-              and a commitment to customer satisfaction, Riz Energy continues to serve Texans with reliable energy options tailored to their needs.ates.
+              We compare plans from leading energy providers to ensure you get the best option for your home or business. With years of industry expertise, 
+   our team understands the energy market and works hard to help customers lower their monthly energy costs.
+            </p>
+   <p className="text-gray-600 text-lg leading-relaxed">
+             Today, customers have more choices than ever beyond their local utility company, and shopping for the right provider can lead to significant savings. 
+   Riz Energy acts as your trusted partner by guiding you through the process and helping you choose the energy solution that fits your needs and budget.
+            </p>
+   <p className="text-gray-600 text-lg leading-relaxed">
+             Contact us today and let Riz Energy help you take control of your monthly energy expenses with smarter electricity and natural gas solutions.
             </p>
           </div>
         </div>
