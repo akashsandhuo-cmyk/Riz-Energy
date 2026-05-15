@@ -124,29 +124,29 @@ export default function EnergyPartnersPage() {
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 items-center">
 
-            {partners.map((partner, index) => (
+  {partners.map((partner, index) => (
 
-              <a
-                key={index}
-                href={partner.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-[32px] border border-gray-200 p-10 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex items-center justify-center min-h-[220px]"
-              >
+    <a
+      key={index}
+      href={partner.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center justify-center hover:scale-105 transition duration-300"
+    >
 
-                <img
-                  src={partner.image}
-                  alt={partner.name}
-                  className="w-full h-32 object-contain"
-                />
+      <img
+        src={partner.image}
+        alt={partner.name}
+        className="w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px] h-auto object-contain"
+      />
 
-              </a>
+    </a>
 
-            ))}
+  ))}
 
-          </div>
+</div>
 
         </div>
 
