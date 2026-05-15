@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: 'Residential', href: '/residential' },
     { name: 'Commercial', href: '/commercial' },
     { name: 'Our Partners', href: '/our-partners' },
-    { name: 'Blogs', href: '/blogss' },
+    { name: 'Blogs', href: '/blogs' },
     { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact' },
   ]
