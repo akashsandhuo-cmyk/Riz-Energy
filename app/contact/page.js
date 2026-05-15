@@ -78,25 +78,83 @@ export default function ContactPage() {
 
             <div className="space-y-6 text-lg text-gray-600">
 
-              <p>
-                📧 info@rizenergy.com
-              </p>
+  <p>
+    📧 info@rizenergy.com
+  </p>
 
-              <p>
-                📞 +1 (713) 503-3098
-              </p>
+  <p>
+    📞 +1 (713) 503-3098
+  </p>
 
-              <p>
-                📠 +1 (713) 559-8580
-              </p>
+  <p>
+    📠 +1 (713) 559-8580
+  </p>
 
-              <p>
-                📍 4615 Southwest Fwy, Suite 330
-                <br />
-                Houston, Texas USA 77027
-              </p>
+  <p>
+    📍 4615 Southwest Fwy, Suite 330
+    <br />
+    Houston, Texas USA 77027
+  </p>
 
-            </div>
+</div>
+
+{/* SOCIAL MEDIA */}
+<div className="mt-10">
+
+  <h3 className="text-2xl font-black mb-6">
+    Follow Us
+  </h3>
+
+  <div className="flex flex-wrap gap-4">
+
+    <a
+      href="https://www.facebook.com/rizenergy/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-blue-600 hover:scale-105 transition text-white px-6 py-3 rounded-2xl font-bold"
+    >
+      Facebook
+    </a>
+
+    <a
+      href="https://www.instagram.com/rizenergy/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-pink-500 hover:scale-105 transition text-white px-6 py-3 rounded-2xl font-bold"
+    >
+      Instagram
+    </a>
+
+    <a
+      href="https://www.linkedin.com/company/riz-energy"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-blue-800 hover:scale-105 transition text-white px-6 py-3 rounded-2xl font-bold"
+    >
+      LinkedIn
+    </a>
+
+    <a
+      href="https://twitter.com/rizenergy?lang=en"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-black hover:scale-105 transition text-white px-6 py-3 rounded-2xl font-bold"
+    >
+      X / Twitter
+    </a>
+
+    <a
+      href="https://yelp.to/qTKq/H5OgPtRax3"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-red-600 hover:scale-105 transition text-white px-6 py-3 rounded-2xl font-bold"
+    >
+      Yelp
+    </a>
+
+  </div>
+
+</div>
 
           </div>
 
