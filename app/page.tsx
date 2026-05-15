@@ -365,115 +365,82 @@ export default function RizEnergyHomepage() {
 
           </div>
 
-          {/* REVIEWS */}
-          <div className="overflow-hidden">
+        {/* REVIEWS */}
+<div className="overflow-hidden">
 
-            <div className="border border-gray-200 rounded-[40px] p-10 shadow-sm bg-white">
+  <div className="border border-gray-200 rounded-[40px] p-10 shadow-sm bg-white">
 
-              <div className="flex items-center justify-between mb-8">
+    <div className="mb-10">
 
-                <div>
+      <p className="text-orange-500 font-bold uppercase tracking-widest mb-2">
+        Customer Reviews
+      </p>
 
-                  <p className="text-orange-500 font-bold uppercase tracking-widest mb-2">
-                    Customer Reviews
-                  </p>
+      <h3 className="text-4xl font-black">
+        What Clients Say
+      </h3>
 
-                  <h3 className="text-4xl font-black">
-                    What Clients Say
-                  </h3>
+    </div>
 
-                </div>
+    {/* REVIEW SLIDER */}
+    <div className="relative overflow-hidden">
 
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                  alt="Google"
-                  className="w-12 h-12"
-                />
+      <div className="flex gap-6 animate-review-slider">
 
-              </div>
+        {[...reviews, ...reviews].map((item, index) => (
 
-              {/* GOOGLE RATING */}
-              <div className="bg-gray-50 rounded-3xl p-6 mb-10">
+          <div
+            key={index}
+            className="min-w-[320px] bg-gray-50 rounded-[32px] p-8 flex-shrink-0"
+          >
 
-                <div className="flex items-center gap-4 mb-3">
+            <div className="text-yellow-400 text-2xl mb-5">
+              ⭐⭐⭐⭐⭐
+            </div>
 
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                    alt="Google"
-                    className="w-10 h-10"
-                  />
+            <p className="text-gray-700 leading-relaxed mb-8 text-lg">
+              "{item.review}"
+            </p>
 
-                  <div className="flex text-yellow-400 text-3xl">
-                    ⭐⭐⭐⭐⭐
-                  </div>
+            <div>
 
-                </div>
+              <h4 className="font-black text-xl">
+                {item.name}
+              </h4>
 
-                <p className="text-lg font-medium text-gray-700">
-                  We have a 5-star rating on Google. You will not find an energy company with a better rating.
-                </p>
-
-              </div>
-
-              {/* REVIEW SLIDER */}
-              <div className="relative overflow-hidden">
-
-                <div className="flex gap-6 animate-review-slider">
-
-                  {[...reviews, ...reviews].map((item, index) => (
-
-                    <div
-                      key={index}
-                      className="min-w-[320px] bg-gray-50 rounded-[32px] p-8 flex-shrink-0"
-                    >
-
-                      <div className="text-yellow-400 text-2xl mb-5">
-                        ⭐⭐⭐⭐⭐
-                      </div>
-
-                      <p className="text-gray-700 leading-relaxed mb-8 text-lg">
-                        "{item.review}"
-                      </p>
-
-                      <div>
-
-                        <h4 className="font-black text-xl">
-                          {item.name}
-                        </h4>
-
-                        <p className="text-gray-500">
-                          Our Client
-                        </p>
-
-                      </div>
-
-                    </div>
-
-                  ))}
-
-                </div>
-
-              </div>
+              <p className="text-gray-500">
+                Our Client
+              </p>
 
             </div>
 
-            <style jsx>{`
-              .animate-review-slider {
-                animation: reviewSlider 45s linear infinite;
-                width: max-content;
-              }
-
-              @keyframes reviewSlider {
-                from {
-                  transform: translateX(0);
-                }
-                to {
-                  transform: translateX(-50%);
-                }
-              }
-            `}</style>
-
           </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <style jsx>{`
+    .animate-review-slider {
+      animation: reviewSlider 45s linear infinite;
+      width: max-content;
+    }
+
+    @keyframes reviewSlider {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  `}</style>
+
+</div>
 
         </div>
 
