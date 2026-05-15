@@ -30,11 +30,11 @@ export default function Navbar() {
             About
           </a>
 
-          <a href="/Residential" className="hover:text-orange-500 transition">
+          <a href="/residential" className="hover:text-orange-500 transition">
             Residential
           </a>
 
-          <a href="/Commercial" className="hover:text-orange-500 transition">
+          <a href="/commercial" className="hover:text-orange-500 transition">
             Commercial
           </a>
 
