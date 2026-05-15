@@ -42,11 +42,10 @@ export default function ContactPage() {
     setLoading(false)
   }
 
-  return (
-    <div>
+ return (
+  <div className="bg-white text-black min-h-screen">
 
-      <Navbar />
-
+    <Navbar />
       {/* HERO */}
       <section className="py-24 px-6 bg-gradient-to-r from-orange-50 to-yellow-50">
 
