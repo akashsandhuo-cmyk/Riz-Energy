@@ -42,9 +42,7 @@ export default function RizEnergyHomepage() {
 
           {/* LEFT */}
           <div>
-            <div className="inline-flex items-center gap-2 border border-lime-400 bg-lime-50 text-lime-700 rounded-full px-4 py-2 text-sm font-semibold mb-8">
-              ⚡ POWERING ACROSS TEXAS
-            </div>
+            
 
             <h1 className="text-6xl lg:text-7xl font-black leading-tight mb-8">
               Smarter Energy.
@@ -57,7 +55,7 @@ export default function RizEnergyHomepage() {
 
             <p className="text-gray-600 text-xl leading-relaxed mb-10 max-w-xl">
               Riz Energy helps everyone across Texas reduce energy costs
-              with custom electricity and natural gas solutions.
+              with custom electricity solutions.
             </p>
 
             <div className="flex flex-wrap gap-5 mb-12">
