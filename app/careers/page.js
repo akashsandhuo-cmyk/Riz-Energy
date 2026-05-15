@@ -3,8 +3,9 @@ import Footer from '../components/Footer'
 
 export default function CareersPage() {
   return (
-    <div>
-      <Navbar />
+  <div className="bg-white text-black min-h-screen">
+
+    <Navbar />
 
       <section className="py-24 px-6 bg-gradient-to-r from-orange-50 to-sky-50">
         <div className="max-w-7xl mx-auto text-center">
