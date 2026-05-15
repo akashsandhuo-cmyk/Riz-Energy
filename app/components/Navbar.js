@@ -10,7 +10,7 @@ export default function Navbar() {
     { name: 'About', href: '/about' },
     { name: 'Residential', href: '/residential' },
     { name: 'Commercial', href: '/commercial' },
-    { name: 'Our Partners', href: '/our-energy-partners' },
+    { name: 'Our Partners', href: '/our-partners' },
     { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact' },
   ]
