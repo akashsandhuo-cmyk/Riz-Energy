@@ -120,20 +120,28 @@ export default function CommercialPage() {
                 />
 
                 <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address"
-                  required
-                  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-                />
+  type="email"
+  name="email"
+  placeholder="Email Address"
+  required
+  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
+/>
 
-                <input
-                  type="text"
-                  name="business"
-                  placeholder="Business Name"
-                  required
-                  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-                />
+<input
+  type="tel"
+  name="phone"
+  placeholder="Phone Number"
+  required
+  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
+/>
+
+<input
+  type="text"
+  name="business"
+  placeholder="Business Name"
+  required
+  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
+/>
 
                 <textarea
                   name="message"
