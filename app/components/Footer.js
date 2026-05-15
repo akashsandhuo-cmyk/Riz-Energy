@@ -17,9 +17,33 @@ export default function Footer() {
             Delivering smarter energy solutions across Texas, USA.
           </p>
 
-          <h5 className="font-semibold text-gray-700">
+          <h5 className="font-semibold text-gray-700 mb-6">
             PUCT Broker License BR250165
           </h5>
+
+          {/* GOOGLE RATING */}
+          <div className="bg-white border border-gray-200 rounded-3xl p-5 shadow-sm">
+
+            <div className="flex items-center gap-4 mb-3">
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                alt="Google"
+                className="w-10 h-10"
+              />
+
+              <div className="flex text-yellow-400 text-2xl">
+                ⭐⭐⭐⭐⭐
+              </div>
+
+            </div>
+
+            <p className="text-gray-700 font-medium leading-relaxed">
+              We have a 5-star rating on Google.
+              You will not find an energy company with a better rating.
+            </p>
+
+          </div>
 
         </div>
 
@@ -63,10 +87,17 @@ export default function Footer() {
 
           <ul className="space-y-3 text-gray-600">
 
-            <li>Residential</li>
+            <li>
+              <a href="/residential" className="hover:text-orange-500 transition">
+                Residential
+              </a>
+            </li>
 
-            <li>Commercial</li>
-
+            <li>
+              <a href="/commercial" className="hover:text-orange-500 transition">
+                Commercial
+              </a>
+            </li>
 
           </ul>
 
