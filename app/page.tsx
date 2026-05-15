@@ -56,7 +56,7 @@ export default function RizEnergyHomepage() {
             </h1>
 
             <p className="text-gray-600 text-xl leading-relaxed mb-10 max-w-xl">
-              RIZ Energy helps everyone across Texas reduce energy costs
+              Riz Energy helps everyone across Texas reduce energy costs
               with custom electricity and natural gas solutions.
             </p>
 
@@ -95,7 +95,7 @@ export default function RizEnergyHomepage() {
             <div className="absolute bottom-0 right-10 w-52 h-52 bg-sky-500 rotate-12 rounded-3xl opacity-80"></div>
 
             <img
-              src="https://chatgpt.com/backend-api/estuary/content?id=file_00000000fc747207931e7044646546e9&ts=494124&p=fs&cid=1&sig=53f557d549853b8dfcbb352925f0a0b4a8a92150d9da5adbd0110846a34850c5&v=0"
+              src="https://www.rizenergy.com/images/riz-new-banner.jpeg"
               className="relative z-10 rounded-[40px] shadow-2xl"
               alt="Energy"
             />
@@ -105,44 +105,88 @@ export default function RizEnergyHomepage() {
         </div>
       </section>
 
-      {/* LOGOS */}
-      <section className="border-y border-gray-200 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 py-10">
+   {/* PARTNER LOGOS SLIDER */}
+<section className="border-y border-gray-200 bg-gray-50 overflow-hidden">
 
-          <p className="text-center text-sm font-bold text-gray-500 mb-8">
-            OUR BUSINESSES PARTNERS ACROSS TEXAS
-          </p>
+  <div className="max-w-7xl mx-auto px-6 py-10">
 
-          <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 items-center text-center">
+    <p className="text-center text-sm font-bold text-gray-500 mb-10">
+      OUR BUSINESS PARTNERS ACROSS TEXAS
+    </p>
 
-            {[
-              'Forntier Utilities',
-              'AGP&E',
-              'Chariot Energy',
-              'Budget Power',
-              'Iron Horse Power Services',
-              'True Power',
-              'Constellation',
-              'Atlantic Energy',
-              'Branch Energy',
-              'Think Energy!',
-              'Shell Energy',  
-              'CleanSky Energy',
-            ].map((brand, index) => (
+    <div className="relative overflow-hidden">
 
-              <div
-                key={index}
-                className="text-2xl font-bold text-gray-400"
-              >
-                {brand}
-              </div>
+      {/* SLIDER */}
+      <div className="flex gap-16 animate-marquee whitespace-nowrap items-center">
 
-            ))}
+        {[
+          'https://rizenergy.com/images/g2.jpg',
+          'https://rizenergy.com/images/APG&E.jpg',
+          'https://rizenergy.com/images/g3.3-1.jpg',
+          'https://rizenergy.com/images/budget-power.png',
+          'https://rizenergy.com/images/iron-horse.png',
+          'https://rizenergy.com/images/truepower.png',
+          'https://rizenergy.com/images/constellation.png',
+          'https://rizenergy.com/images/atlanticenergy.png',
+          'https://rizenergy.com/images/branch-power.png',
+          'https://rizenergy.com/images/think-energy.png',
+          'https://rizenergy.com/images/shell-energy.png',
+          'https://rizenergy.com/images/cleanskyenergy.png',
+
+          // DUPLICATE FOR SMOOTH LOOP
+          'https://rizenergy.com/images/g2.jpg',
+          'https://rizenergy.com/images/APG&E.jpg',
+          'https://rizenergy.com/images/g3.3-1.jpg',
+          'https://rizenergy.com/images/budget-power.png',
+          'https://rizenergy.com/images/iron-horse.png',
+          'https://rizenergy.com/images/truepower.png',
+          'https://rizenergy.com/images/constellation.png',
+          'https://rizenergy.com/images/atlanticenergy.png',
+          'https://rizenergy.com/images/branch-power.png',
+          'https://rizenergy.com/images/think-energy.png',
+          'https://rizenergy.com/images/shell-energy.png',
+          'https://rizenergy.com/images/cleanskyenergy.png',
+        ].map((logo, index) => (
+
+          <div
+            key={index}
+            className="flex-shrink-0"
+          >
+
+            <img
+              src={logo}
+              alt="Partner Logo"
+              className="h-20 md:h-24 lg:h-28 w-auto object-contain"
+            />
 
           </div>
 
-        </div>
-      </section>
+        ))}
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* ANIMATION STYLE */}
+  <style jsx>{`
+    .animate-marquee {
+      animation: marquee 35s linear infinite;
+      width: max-content;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  `}</style>
+
+</section>
 
       {/* SERVICES */}
       <section className="py-28 px-6 bg-white">
@@ -277,7 +321,7 @@ export default function RizEnergyHomepage() {
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              RIZ Energy is a trusted Texas energy partner helping businesses reduce
+              Riz Energy is a trusted Texas energy partner helping businesses reduce
               costs through customized procurement strategies and renewable
               solutions.
             </p>
@@ -306,7 +350,7 @@ export default function RizEnergyHomepage() {
             </div>
 
             <p className="text-2xl leading-relaxed mb-8">
-              Highly recommended company - RIZ ENERGY always works hard to get you the best deal out there.
+              Highly recommended company - Riz ENERGY always works hard to get you the best deal out there.
             </p>
 
             <div className="flex items-center gap-4">
