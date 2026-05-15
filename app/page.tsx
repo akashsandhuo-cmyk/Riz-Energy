@@ -130,6 +130,7 @@ export default function RizEnergyHomepage() {
           'https://rizenergy.com/images/think-energy.png',
           'https://rizenergy.com/images/shell-energy.png',
           'https://rizenergy.com/images/cleanskyenergy.png',
+          'https://rizenergy.com/images/spark1.png'
 
           // DUPLICATE FOR SMOOTH LOOP
           'https://rizenergy.com/images/g2.jpg',
@@ -144,6 +145,7 @@ export default function RizEnergyHomepage() {
           'https://rizenergy.com/images/think-energy.png',
           'https://rizenergy.com/images/shell-energy.png',
           'https://rizenergy.com/images/cleanskyenergy.png',
+          'https://rizenergy.com/images/spark1.png',
         ].map((logo, index) => (
 
           <div
@@ -341,33 +343,183 @@ export default function RizEnergyHomepage() {
           </div>
 
           {/* TESTIMONIAL */}
-          <div className="border border-gray-200 rounded-[40px] p-10 shadow-sm">
+<div className="lg:col-span-1 overflow-hidden">
 
-            <div className="text-orange-500 text-5xl mb-6">
-              “
+  <div className="border border-gray-200 rounded-[40px] p-10 shadow-sm bg-white">
+
+    <div className="flex items-center justify-between mb-8">
+
+      <div>
+
+        <p className="text-orange-500 font-bold uppercase tracking-widest mb-2">
+          Customer Reviews
+        </p>
+
+        <h3 className="text-4xl font-black">
+          What Clients Say
+        </h3>
+
+      </div>
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+        alt="Google"
+        className="w-12 h-12"
+      />
+
+    </div>
+
+    {/* GOOGLE RATING */}
+    <div className="bg-gray-50 rounded-3xl p-6 mb-10">
+
+      <div className="flex items-center gap-4 mb-3">
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+          alt="Google"
+          className="w-10 h-10"
+        />
+
+        <div className="flex text-yellow-400 text-3xl">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+      </div>
+
+      <p className="text-lg font-medium text-gray-700">
+        We have a 5-star rating on Google. You won't find an energy company with a better rating.
+      </p>
+
+    </div>
+
+    {/* REVIEWS SLIDER */}
+    <div className="relative overflow-hidden">
+
+      <div className="flex gap-6 animate-review-slider">
+
+        {[
+          {
+            name: 'Sereyrath Sok',
+            review:
+              'Riz Energy saved my donut shop 42% percent from Stream Energy. This is the best company in Texas.',
+          },
+
+          {
+            name: 'Rashid Nabi',
+            review:
+              'All my family in New Jersey and Texas go through Riz Energy. Great rates and amazing service.',
+          },
+
+          {
+            name: 'Manni Munir',
+            review:
+              'Highly recommended company - Riz always works hard to get you the best deal out there.',
+          },
+
+          {
+            name: 'Zach A. Alam',
+            review:
+              'I switched my house from Reliant and saved money by going through Riz Energy.',
+          },
+
+          {
+            name: 'Saad Javed',
+            review:
+              'Great deals and even greater customer service! Enjoy being with them.',
+          },
+
+          {
+            name: 'Moin Yazdani',
+            review:
+              'Riz Energy lowered my parents home electricity rate by 50%.',
+          },
+
+          {
+            name: 'Ifraan Alam',
+            review:
+              'Excellent customer service and easy-to-understand rate plans with no hidden fees.',
+          },
+
+          // DUPLICATE FOR LOOP
+          {
+            name: 'Sereyrath Sok',
+            review:
+              'Riz Energy saved my donut shop 42% percent from Stream Energy. This is the best company in Texas.',
+          },
+
+          {
+            name: 'Rashid Nabi',
+            review:
+              'All my family in New Jersey and Texas go through Riz Energy. Great rates and amazing service.',
+          },
+
+          {
+            name: 'Manni Munir',
+            review:
+              'Highly recommended company - Riz always works hard to get you the best deal out there.',
+          },
+
+          {
+            name: 'Zach A. Alam',
+            review:
+              'I switched my house from Reliant and saved money by going through Riz Energy.',
+          },
+
+        ].map((item, index) => (
+
+          <div
+            key={index}
+            className="min-w-[340px] bg-gray-50 rounded-[32px] p-8 flex-shrink-0"
+          >
+
+            <div className="text-yellow-400 text-2xl mb-5">
+              ⭐⭐⭐⭐⭐
             </div>
 
-            <p className="text-2xl leading-relaxed mb-8">
-              Highly recommended company - Riz ENERGY always works hard to get you the best deal out there.
+            <p className="text-gray-700 leading-relaxed mb-8 text-lg">
+              "{item.review}"
             </p>
 
-            <div className="flex items-center gap-4">
+            <div>
 
-              <img
-                src="https://randomuser.me/api/portraits/men/32.jpg"
-                alt="User"
-                className="w-14 h-14 rounded-full"
-              />
+              <h4 className="font-black text-xl">
+                {item.name}
+              </h4>
 
-              <div>
-                <h4 className="font-bold">
-                  Manni Munir
-                </h4>
+              <p className="text-gray-500">
+                Our Client
+              </p>
 
-                <p className="text-gray-500">
-                  Our Client
-                </p>
-              </div>
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* SLIDER STYLE */}
+  <style jsx>{`
+    .animate-review-slider {
+      animation: reviewSlider 45s linear infinite;
+      width: max-content;
+    }
+
+    @keyframes reviewSlider {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  `}</style>
+
+</div>
 
             </div>
 
