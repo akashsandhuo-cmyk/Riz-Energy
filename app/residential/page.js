@@ -1,6 +1,69 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
+const partners = [
+  {
+    name: 'APG&E',
+    image: 'https://rizenergy.com/images/APG&E.jpg',
+    link: 'https://www.apge.com/partners/rizenergy/?utm_source=riz%20energy&utm_medium=referral&utm_campaign=broker&utm_content=resi',
+  },
+  {
+    name: 'Frontier Utilities',
+    image: 'https://rizenergy.com/images/g2.jpg',
+    link: 'https://www.frontierutilities.com/rizenergytx',
+  },
+  {
+    name: 'Chariot Energy',
+    image: 'https://rizenergy.com/images/g3.3-1.jpg',
+    link: 'https://signup.chariotenergy.com/Home/?Promocode=RIZENERGY',
+  },
+  {
+    name: 'Budget Power',
+    image: 'https://rizenergy.com/images/budget-power.png',
+    link: 'https://signup.budgetpowertx.com/Home/Promo?Promocode=Rizenergy425',
+  },
+  {
+    name: 'Iron Horse',
+    image: 'https://rizenergy.com/images/iron-horse.png',
+    link: 'https://signup.ironhorsepowerservices.com/riz',
+  },
+  {
+    name: 'True Power',
+    image: 'https://rizenergy.com/images/truepower.png',
+    link: 'https://www.truepower.com/partner/riz-energy/',
+  },
+  {
+    name: 'Constellation',
+    image: 'https://rizenergy.com/images/constellation.png',
+    link: 'https://www.constellation.com/campaigns/riz-energy.html',
+  },
+  {
+    name: 'Atlantic Energy',
+    image: 'https://rizenergy.com/images/atlanticenergy.png',
+    link: 'https://enroll.atlantexpower.com/Enrollment/Default.aspx?zipCode=&promoCode=RIZENERGY',
+  },
+  {
+    name: 'Branch Power',
+    image: 'https://rizenergy.com/images/branch-power.png',
+    link: 'https://www.branchenergy.com/',
+  },
+  {
+    name: 'Think Energy',
+    image: 'https://rizenergy.com/images/think-energy.png',
+    link: 'https://signup.thinkenergy.com/zipcode?channel=RizEnergy',
+  },
+  {
+    name: 'Shell Energy',
+    image: 'https://rizenergy.com/images/shell-energy.png',
+    link: 'https://www.shellenergy.com/',
+  },
+  {
+    name: 'Clean Sky Energy',
+    image: 'https://rizenergy.com/images/cleanskyenergy.png',
+    link: 'https://signup.cleanskyenergy.com/?promocode=RIZR',
+  },
+]
+
 export default function ResidentialPage() {
   return (
     <div className="bg-white text-black min-h-screen">
@@ -95,175 +158,27 @@ export default function ResidentialPage() {
 
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
-              {/* APG&E */}
-              <a
-                href="https://www.apge.com/partners/rizenergy/?utm_source=riz%20energy&utm_medium=referral&utm_campaign=broker&utm_content=resi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/APG&E.jpg"
-                  alt="APG&E"
-                  className="max-h-16 object-contain"
-                />
-              </a>
+              {partners.map((partner, index) => (
 
-              {/* FRONTIER */}
-              <a
-                href="https://www.frontierutilities.com/rizenergytx"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/g2.jpg"
-                  alt="Frontier Utilities"
-                  className="max-h-16 object-contain"
-                />
-              </a>
+                <a
+                  key={index}
+                  href={partner.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white rounded-3xl p-8 border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition duration-300 flex items-center justify-center min-h-[180px]"
+                >
 
-              {/* CHARIOT */}
-              <a
-                href="https://signup.chariotenergy.com/Home/?Promocode=RIZENERGY"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/g3.3-1.jpg"
-                  alt="Chariot Energy"
-                  className="max-h-16 object-contain"
-                />
-              </a>
+                  <img
+                    src={partner.image}
+                    alt={partner.name}
+                    className="w-full h-32 object-contain"
+                  />
 
-              {/* BUDGET POWER */}
-              <a
-                href="https://signup.budgetpowertx.com/Home/Promo?Promocode=Rizenergy425"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/budget-power.png"
-                  alt="Budget Power"
-                  className="max-h-16 object-contain"
-                />
-              </a>
+                </a>
 
-              {/* IRON HORSE */}
-              <a
-                href="https://signup.ironhorsepowerservices.com/riz"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/iron-horse.png"
-                  alt="Iron Horse"
-                  className="max-h-16 object-contain"
-                />
-              </a>
-
-              {/* TRUE POWER */}
-              <a
-                href="https://www.truepower.com/partner/riz-energy/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/truepower.png"
-                  alt="True Power"
-                  className="max-h-16 object-contain"
-                />
-              </a>
-
-              {/* CONSTELLATION */}
-              <a
-                href="https://www.constellation.com/campaigns/riz-energy.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/constellation.png"
-                  alt="Constellation"
-                  className="max-h-16 object-contain"
-                />
-              </a>
-
-              {/* ATLANTIC ENERGY */}
-              <a
-                href="https://enroll.atlantexpower.com/Enrollment/Default.aspx?zipCode=&promoCode=RIZENERGY"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/atlanticenergy.png"
-                  alt="Atlantic Energy"
-                  className="max-h-16 object-contain"
-                />
-              </a>
-
-              {/* BRANCH POWER */}
-              <a
-                href="https://www.branchenergy.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/branch-power.png"
-                  alt="Branch Power"
-                  className="max-h-16 object-contain"
-                />
-              </a>
-
-              {/* THINK ENERGY */}
-              <a
-                href="https://signup.thinkenergy.com/zipcode?channel=RizEnergy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/think-energy.png"
-                  alt="Think Energy"
-                  className="max-h-16 object-contain"
-                />
-              </a>
-
-              {/* SHELL ENERGY */}
-              <a
-                href="https://www.shellenergy.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/shell-energy.png"
-                  alt="Shell Energy"
-                  className="max-h-16 object-contain"
-                />
-              </a>
-
-              {/* CLEAN SKY */}
-              <a
-                href="https://signup.cleanskyenergy.com/?promocode=RIZR"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-3xl p-6 border border-gray-200 hover:shadow-xl transition flex items-center justify-center"
-              >
-                <img
-                  src="https://rizenergy.com/images/cleanskyenergy.png"
-                  alt="Clean Sky Energy"
-                  className="max-h-16 object-contain"
-                />
-              </a>
+              ))}
 
             </div>
 
