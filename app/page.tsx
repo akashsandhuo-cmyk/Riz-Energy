@@ -31,6 +31,60 @@ export default function RizEnergyHomepage() {
     },
   ]
 
+  const reviews = [
+    {
+      name: 'Sereyrath Sok',
+      review:
+        'Riz Energy saved my donut shop 42% percent from Stream Energy. This is the best company in Texas.',
+    },
+    {
+      name: 'Rashid Nabi',
+      review:
+        'All my family in New Jersey and Texas go through Riz Energy. Great rates and amazing service.',
+    },
+    {
+      name: 'Manni Munir',
+      review:
+        'Highly recommended company - Riz always works hard to get you the best deal out there.',
+    },
+    {
+      name: 'Zach A. Alam',
+      review:
+        'I switched my house from Reliant and saved money by going through Riz Energy.',
+    },
+    {
+      name: 'Saad Javed',
+      review:
+        'Great deals and even greater customer service! Enjoy being with them.',
+    },
+    {
+      name: 'Moin Yazdani',
+      review:
+        'Riz Energy lowered my parents home electricity rate by 50%.',
+    },
+    {
+      name: 'Ifraan Alam',
+      review:
+        'Excellent customer service and easy-to-understand rate plans with no hidden fees.',
+    },
+  ]
+
+  const partnerLogos = [
+    'https://rizenergy.com/images/g2.jpg',
+    'https://rizenergy.com/images/APG&E.jpg',
+    'https://rizenergy.com/images/g3.3-1.jpg',
+    'https://rizenergy.com/images/budget-power.png',
+    'https://rizenergy.com/images/iron-horse.png',
+    'https://rizenergy.com/images/truepower.png',
+    'https://rizenergy.com/images/constellation.png',
+    'https://rizenergy.com/images/atlanticenergy.png',
+    'https://rizenergy.com/images/branch-power.png',
+    'https://rizenergy.com/images/think-energy.png',
+    'https://rizenergy.com/images/shell-energy.png',
+    'https://rizenergy.com/images/cleanskyenergy.png',
+    'https://rizenergy.com/images/spark1.png',
+  ]
+
   return (
     <div className="bg-white text-black min-h-screen overflow-hidden">
 
@@ -42,9 +96,8 @@ export default function RizEnergyHomepage() {
 
           {/* LEFT */}
           <div>
-            
 
-            <h1 className="text-6xl lg:text-7xl font-black leading-tight mb-8">
+            <h1 className="text-5xl lg:text-7xl font-black leading-tight mb-8">
               Smarter Energy.
               <br />
               Stronger{' '}
@@ -81,6 +134,7 @@ export default function RizEnergyHomepage() {
               <div>👥 Trusted Energy Experts</div>
               <div>📉 Save More On Energy</div>
             </div>
+
           </div>
 
           {/* RIGHT */}
@@ -103,90 +157,59 @@ export default function RizEnergyHomepage() {
         </div>
       </section>
 
-   {/* PARTNER LOGOS SLIDER */}
-<section className="border-y border-gray-200 bg-gray-50 overflow-hidden">
+      {/* PARTNER LOGOS */}
+      <section className="border-y border-gray-200 bg-gray-50 overflow-hidden">
 
-  <div className="max-w-7xl mx-auto px-6 py-10">
+        <div className="max-w-7xl mx-auto px-6 py-10">
 
-    <p className="text-center text-sm font-bold text-gray-500 mb-10">
-      OUR BUSINESS PARTNERS ACROSS TEXAS
-    </p>
+          <p className="text-center text-sm font-bold text-gray-500 mb-10">
+            OUR BUSINESS PARTNERS ACROSS TEXAS
+          </p>
 
-    <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden">
 
-      {/* SLIDER */}
-      <div className="flex gap-16 animate-marquee whitespace-nowrap items-center">
+            <div className="flex gap-16 animate-marquee whitespace-nowrap items-center">
 
-        {[
-          'https://rizenergy.com/images/g2.jpg',
-          'https://rizenergy.com/images/APG&E.jpg',
-          'https://rizenergy.com/images/g3.3-1.jpg',
-          'https://rizenergy.com/images/budget-power.png',
-          'https://rizenergy.com/images/iron-horse.png',
-          'https://rizenergy.com/images/truepower.png',
-          'https://rizenergy.com/images/constellation.png',
-          'https://rizenergy.com/images/atlanticenergy.png',
-          'https://rizenergy.com/images/branch-power.png',
-          'https://rizenergy.com/images/think-energy.png',
-          'https://rizenergy.com/images/shell-energy.png',
-          'https://rizenergy.com/images/cleanskyenergy.png',
-          'https://rizenergy.com/images/spark1.png',
+              {[...partnerLogos, ...partnerLogos].map((logo, index) => (
 
-          // DUPLICATE FOR SMOOTH LOOP
-          'https://rizenergy.com/images/g2.jpg',
-          'https://rizenergy.com/images/APG&E.jpg',
-          'https://rizenergy.com/images/g3.3-1.jpg',
-          'https://rizenergy.com/images/budget-power.png',
-          'https://rizenergy.com/images/iron-horse.png',
-          'https://rizenergy.com/images/truepower.png',
-          'https://rizenergy.com/images/constellation.png',
-          'https://rizenergy.com/images/atlanticenergy.png',
-          'https://rizenergy.com/images/branch-power.png',
-          'https://rizenergy.com/images/think-energy.png',
-          'https://rizenergy.com/images/shell-energy.png',
-          'https://rizenergy.com/images/cleanskyenergy.png',
-          'https://rizenergy.com/images/spark1.png',
-        ].map((logo, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0"
+                >
 
-          <div
-            key={index}
-            className="flex-shrink-0"
-          >
+                  <img
+                    src={logo}
+                    alt="Partner Logo"
+                    className="h-20 md:h-24 lg:h-28 w-auto object-contain"
+                  />
 
-            <img
-              src={logo}
-              alt="Partner Logo"
-              className="h-20 md:h-24 lg:h-28 w-auto object-contain"
-            />
+                </div>
+
+              ))}
+
+            </div>
 
           </div>
 
-        ))}
+        </div>
 
-      </div>
+        <style jsx>{`
+          .animate-marquee {
+            animation: marquee 35s linear infinite;
+            width: max-content;
+          }
 
-    </div>
+          @keyframes marquee {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(-50%);
+            }
+          }
+        `}</style>
 
-  </div>
-
-  {/* ANIMATION STYLE */}
-  <style jsx>{`
-    .animate-marquee {
-      animation: marquee 35s linear infinite;
-      width: max-content;
-    }
-
-    @keyframes marquee {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-50%);
-      }
-    }
-  `}</style>
-
-</section>
+      </section>
 
       {/* SERVICES */}
       <section className="py-28 px-6 bg-white">
@@ -293,13 +316,13 @@ export default function RizEnergyHomepage() {
 
       </section>
 
-      {/* ABOUT */}
+      {/* ABOUT + REVIEWS */}
       <section className="py-20 px-6">
 
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-10 items-center">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-10 items-start">
 
           {/* IMAGE */}
-          <div className="lg:col-span-1">
+          <div>
 
             <img
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop"
@@ -309,7 +332,7 @@ export default function RizEnergyHomepage() {
 
           </div>
 
-          {/* TEXT */}
+          {/* ABOUT */}
           <div>
 
             <p className="text-orange-500 font-bold uppercase tracking-widest mb-5">
@@ -342,186 +365,113 @@ export default function RizEnergyHomepage() {
 
           </div>
 
-          {/* TESTIMONIAL */}
-<div className="lg:col-span-1 overflow-hidden">
+          {/* REVIEWS */}
+          <div className="overflow-hidden">
 
-  <div className="border border-gray-200 rounded-[40px] p-10 shadow-sm bg-white">
+            <div className="border border-gray-200 rounded-[40px] p-10 shadow-sm bg-white">
 
-    <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center justify-between mb-8">
 
-      <div>
+                <div>
 
-        <p className="text-orange-500 font-bold uppercase tracking-widest mb-2">
-          Customer Reviews
-        </p>
+                  <p className="text-orange-500 font-bold uppercase tracking-widest mb-2">
+                    Customer Reviews
+                  </p>
 
-        <h3 className="text-4xl font-black">
-          What Clients Say
-        </h3>
+                  <h3 className="text-4xl font-black">
+                    What Clients Say
+                  </h3>
 
-      </div>
+                </div>
 
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-        alt="Google"
-        className="w-12 h-12"
-      />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                  alt="Google"
+                  className="w-12 h-12"
+                />
 
-    </div>
+              </div>
 
-    {/* GOOGLE RATING */}
-    <div className="bg-gray-50 rounded-3xl p-6 mb-10">
+              {/* GOOGLE RATING */}
+              <div className="bg-gray-50 rounded-3xl p-6 mb-10">
 
-      <div className="flex items-center gap-4 mb-3">
+                <div className="flex items-center gap-4 mb-3">
 
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-          alt="Google"
-          className="w-10 h-10"
-        />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                    alt="Google"
+                    className="w-10 h-10"
+                  />
 
-        <div className="flex text-yellow-400 text-3xl">
-          ⭐⭐⭐⭐⭐
-        </div>
+                  <div className="flex text-yellow-400 text-3xl">
+                    ⭐⭐⭐⭐⭐
+                  </div>
 
-      </div>
+                </div>
 
-      <p className="text-lg font-medium text-gray-700">
-        We have a 5-star rating on Google. You won't find an energy company with a better rating.
-      </p>
+                <p className="text-lg font-medium text-gray-700">
+                  We have a 5-star rating on Google. You will not find an energy company with a better rating.
+                </p>
 
-    </div>
+              </div>
 
-    {/* REVIEWS SLIDER */}
-    <div className="relative overflow-hidden">
+              {/* REVIEW SLIDER */}
+              <div className="relative overflow-hidden">
 
-      <div className="flex gap-6 animate-review-slider">
+                <div className="flex gap-6 animate-review-slider">
 
-        {[
-          {
-            name: 'Sereyrath Sok',
-            review:
-              'Riz Energy saved my donut shop 42% percent from Stream Energy. This is the best company in Texas.',
-          },
+                  {[...reviews, ...reviews].map((item, index) => (
 
-          {
-            name: 'Rashid Nabi',
-            review:
-              'All my family in New Jersey and Texas go through Riz Energy. Great rates and amazing service.',
-          },
+                    <div
+                      key={index}
+                      className="min-w-[320px] bg-gray-50 rounded-[32px] p-8 flex-shrink-0"
+                    >
 
-          {
-            name: 'Manni Munir',
-            review:
-              'Highly recommended company - Riz always works hard to get you the best deal out there.',
-          },
+                      <div className="text-yellow-400 text-2xl mb-5">
+                        ⭐⭐⭐⭐⭐
+                      </div>
 
-          {
-            name: 'Zach A. Alam',
-            review:
-              'I switched my house from Reliant and saved money by going through Riz Energy.',
-          },
+                      <p className="text-gray-700 leading-relaxed mb-8 text-lg">
+                        "{item.review}"
+                      </p>
 
-          {
-            name: 'Saad Javed',
-            review:
-              'Great deals and even greater customer service! Enjoy being with them.',
-          },
+                      <div>
 
-          {
-            name: 'Moin Yazdani',
-            review:
-              'Riz Energy lowered my parents home electricity rate by 50%.',
-          },
+                        <h4 className="font-black text-xl">
+                          {item.name}
+                        </h4>
 
-          {
-            name: 'Ifraan Alam',
-            review:
-              'Excellent customer service and easy-to-understand rate plans with no hidden fees.',
-          },
+                        <p className="text-gray-500">
+                          Our Client
+                        </p>
 
-          // DUPLICATE FOR LOOP
-          {
-            name: 'Sereyrath Sok',
-            review:
-              'Riz Energy saved my donut shop 42% percent from Stream Energy. This is the best company in Texas.',
-          },
+                      </div>
 
-          {
-            name: 'Rashid Nabi',
-            review:
-              'All my family in New Jersey and Texas go through Riz Energy. Great rates and amazing service.',
-          },
+                    </div>
 
-          {
-            name: 'Manni Munir',
-            review:
-              'Highly recommended company - Riz always works hard to get you the best deal out there.',
-          },
+                  ))}
 
-          {
-            name: 'Zach A. Alam',
-            review:
-              'I switched my house from Reliant and saved money by going through Riz Energy.',
-          },
+                </div>
 
-        ].map((item, index) => (
-
-          <div
-            key={index}
-            className="min-w-[340px] bg-gray-50 rounded-[32px] p-8 flex-shrink-0"
-          >
-
-            <div className="text-yellow-400 text-2xl mb-5">
-              ⭐⭐⭐⭐⭐
-            </div>
-
-            <p className="text-gray-700 leading-relaxed mb-8 text-lg">
-              "{item.review}"
-            </p>
-
-            <div>
-
-              <h4 className="font-black text-xl">
-                {item.name}
-              </h4>
-
-              <p className="text-gray-500">
-                Our Client
-              </p>
+              </div>
 
             </div>
 
-          </div>
+            <style jsx>{`
+              .animate-review-slider {
+                animation: reviewSlider 45s linear infinite;
+                width: max-content;
+              }
 
-        ))}
-
-      </div>
-
-    </div>
-
-  </div>
-
-  {/* SLIDER STYLE */}
-  <style jsx>{`
-    .animate-review-slider {
-      animation: reviewSlider 45s linear infinite;
-      width: max-content;
-    }
-
-    @keyframes reviewSlider {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-50%);
-      }
-    }
-  `}</style>
-
-</div>
-
-            </div>
+              @keyframes reviewSlider {
+                from {
+                  transform: translateX(0);
+                }
+                to {
+                  transform: translateX(-50%);
+                }
+              }
+            `}</style>
 
           </div>
 
