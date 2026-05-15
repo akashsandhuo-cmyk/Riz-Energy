@@ -15,7 +15,7 @@ const blogs = [
     title: 'Texas’s Power Market Is $1.3 Billion Short After Energy Crisis',
     date: 'February 26, 2021',
     link:
-      'https://www.rizenergy.com/bloomberg.com/news/articles/2021-02-27/texas-s-power-market-is-1-3-billion-short-after-energy-crisis',
+      'https://www.bloomberg.com/news/articles/2021-02-27/texas-s-power-market-is-1-3-billion-short-after-energy-crisis',
     image:
       'https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1400&auto=format&fit=crop',
     excerpt:
