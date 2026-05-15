@@ -75,11 +75,11 @@ export default function ResidentialPage() {
 
         <div className="max-w-7xl mx-auto text-center">
 
-          <h1 className="text-6xl font-black mb-6">
+          <h1 className="text-5xl md:text-6xl font-black mb-6">
             Residential Clients
           </h1>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Helping homeowners find smarter electricity and natural gas solutions.
           </p>
 
@@ -88,7 +88,7 @@ export default function ResidentialPage() {
       </section>
 
       {/* IMAGE + TEXT */}
-      <section className="py-24 px-6">
+      <section className="py-20 md:py-24 px-6">
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
@@ -106,7 +106,7 @@ export default function ResidentialPage() {
           {/* TEXT */}
           <div>
 
-            <h2 className="text-5xl font-black mb-8">
+            <h2 className="text-4xl md:text-5xl font-black mb-8">
               Residential Energy Solutions
             </h2>
 
@@ -126,7 +126,7 @@ export default function ResidentialPage() {
 
               <a
                 href="/contact"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold transition"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold transition shadow-lg"
               >
                 CONTACT US
               </a>
@@ -144,11 +144,11 @@ export default function ResidentialPage() {
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="bg-gray-50 border border-gray-200 rounded-[40px] p-10">
+          <div className="bg-gray-50 rounded-[40px] p-6 md:p-10">
 
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
 
-              <h3 className="text-4xl font-black mb-4">
+              <h3 className="text-4xl md:text-5xl font-black mb-4">
                 Our Energy Partners
               </h3>
 
@@ -158,7 +158,7 @@ export default function ResidentialPage() {
 
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 items-center">
 
               {partners.map((partner, index) => (
 
@@ -167,13 +167,13 @@ export default function ResidentialPage() {
                   href={partner.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white rounded-3xl p-8 border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition duration-300 flex items-center justify-center min-h-[180px]"
+                  className="flex items-center justify-center hover:scale-105 transition duration-300"
                 >
 
                   <img
                     src={partner.image}
                     alt={partner.name}
-                    className="w-full h-32 object-contain"
+                    className="w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px] h-auto object-contain"
                   />
 
                 </a>
