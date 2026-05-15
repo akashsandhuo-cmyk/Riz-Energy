@@ -95,7 +95,7 @@ export default function RizEnergyHomepage() {
             <div className="absolute bottom-0 right-10 w-52 h-52 bg-sky-500 rotate-12 rounded-3xl opacity-80"></div>
 
             <img
-              src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop"
+              src="https://chatgpt.com/backend-api/estuary/content?id=file_00000000fc747207931e7044646546e9&ts=494124&p=fs&cid=1&sig=53f557d549853b8dfcbb352925f0a0b4a8a92150d9da5adbd0110846a34850c5&v=0"
               className="relative z-10 rounded-[40px] shadow-2xl"
               alt="Energy"
             />
