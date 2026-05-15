@@ -49,7 +49,7 @@ export default function CommercialPage() {
           </h1>
 
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Upload your latest electricity or natural gas bill and receive a custom quote for your business.
+            Upload your latest electricity bill and receive a custom quote for your business.
           </p>
 
         </div>
@@ -154,7 +154,7 @@ export default function CommercialPage() {
                 <div>
 
                   <label className="block font-bold mb-3">
-                    Upload Electricity / Gas Bill (PDF or Image)
+                    Upload Electricity Bill (PDF or Image)
                   </label>
 
                   <input
