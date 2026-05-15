@@ -3,9 +3,9 @@ import Footer from '../components/Footer'
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="bg-white text-black">
       <Navbar />
-
+    
       <section className="py-24 px-6 bg-gradient-to-r from-orange-50 to-yellow-50">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-6xl font-black mb-6">About Riz Energy</h1>
