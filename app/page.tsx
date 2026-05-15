@@ -123,7 +123,7 @@ export default function RizEnergyHomepage() {
               'Iron Horse Power Services',
               'True Power',
               'Constellation',
-              'Atlatic Energy',
+              'Atlantic Energy',
               'Branch Energy',
               'Think Energy!',
               'Shell Energy',  
