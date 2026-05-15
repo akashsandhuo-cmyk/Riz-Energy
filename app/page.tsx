@@ -365,50 +365,58 @@ export default function RizEnergyHomepage() {
 
           </div>
 
-        {/* REVIEWS */}
-<div className="overflow-hidden">
+       </div>
 
-  <div className="border border-gray-200 rounded-[40px] p-10 shadow-sm bg-white">
+      </section>
+{/* CUSTOMER REVIEWS */}
+<section className="py-24 px-6 bg-gray-50 overflow-hidden">
 
-    <div className="mb-10">
+  <div className="max-w-7xl mx-auto">
 
-      <p className="text-orange-500 font-bold uppercase tracking-widest mb-2">
+    {/* HEADING */}
+    <div className="text-center mb-16">
+
+      <p className="text-orange-500 font-bold uppercase tracking-widest mb-4">
         Customer Reviews
       </p>
 
-      <h3 className="text-4xl font-black">
-        What Clients Say
-      </h3>
+      <h2 className="text-5xl font-black mb-6">
+        What Our Clients Say
+      </h2>
+
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        Trusted by homeowners and businesses across Texas for smarter energy solutions.
+      </p>
 
     </div>
 
-    {/* REVIEW SLIDER */}
+    {/* REVIEWS SLIDER */}
     <div className="relative overflow-hidden">
 
-      <div className="flex gap-6 animate-review-slider">
+      <div className="flex gap-8 animate-review-slider">
 
         {[...reviews, ...reviews].map((item, index) => (
 
           <div
             key={index}
-            className="min-w-[320px] bg-gray-50 rounded-[32px] p-8 flex-shrink-0"
+            className="min-w-[340px] md:min-w-[420px] bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm flex-shrink-0"
           >
 
-            <div className="text-yellow-400 text-2xl mb-5">
+            <div className="text-yellow-400 text-3xl mb-6">
               ⭐⭐⭐⭐⭐
             </div>
 
-            <p className="text-gray-700 leading-relaxed mb-8 text-lg">
+            <p className="text-gray-700 text-lg leading-relaxed mb-10">
               "{item.review}"
             </p>
 
             <div>
 
-              <h4 className="font-black text-xl">
+              <h4 className="text-2xl font-black">
                 {item.name}
               </h4>
 
-              <p className="text-gray-500">
+              <p className="text-gray-500 mt-1">
                 Our Client
               </p>
 
@@ -424,6 +432,7 @@ export default function RizEnergyHomepage() {
 
   </div>
 
+  {/* SLIDER STYLE */}
   <style jsx>{`
     .animate-review-slider {
       animation: reviewSlider 45s linear infinite;
@@ -440,12 +449,7 @@ export default function RizEnergyHomepage() {
     }
   `}</style>
 
-</div>
-
-        </div>
-
-      </section>
-
+</section>
       {/* CTA */}
       <section className="px-6 py-24">
 
