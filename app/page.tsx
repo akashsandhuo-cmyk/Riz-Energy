@@ -95,7 +95,7 @@ export default function RizEnergyHomepage() {
             <div className="absolute bottom-0 right-10 w-52 h-52 bg-sky-500 rotate-12 rounded-3xl opacity-80"></div>
 
             <img
-              src="https://www.rizenergy.com/images/riz-new-banner.jpeg"
+              src="https://www.rizenergy.com/images/riz-new-banner.png"
               className="relative z-10 rounded-[40px] shadow-2xl"
               alt="Energy"
             />
