@@ -105,51 +105,76 @@ export default function ContactPage() {
     Follow Us
   </h3>
 
-  <div className="flex flex-wrap gap-4">
+  <div className="flex items-center gap-5 flex-wrap">
 
+    {/* FACEBOOK */}
     <a
       href="https://www.facebook.com/rizenergy/"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-blue-600 hover:scale-105 transition text-white px-6 py-3 rounded-2xl font-bold"
+      className="hover:scale-110 transition"
     >
-      Facebook
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+        alt="Facebook"
+        className="w-12 h-12"
+      />
     </a>
 
+    {/* INSTAGRAM */}
     <a
       href="https://www.instagram.com/rizenergy/"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-pink-500 hover:scale-105 transition text-white px-6 py-3 rounded-2xl font-bold"
+      className="hover:scale-110 transition"
     >
-      Instagram
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+        alt="Instagram"
+        className="w-12 h-12"
+      />
     </a>
 
+    {/* LINKEDIN */}
     <a
       href="https://www.linkedin.com/company/riz-energy"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-blue-800 hover:scale-105 transition text-white px-6 py-3 rounded-2xl font-bold"
+      className="hover:scale-110 transition"
     >
-      LinkedIn
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"
+        alt="LinkedIn"
+        className="w-12 h-12"
+      />
     </a>
 
+    {/* TWITTER / X */}
     <a
       href="https://twitter.com/rizenergy?lang=en"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-black hover:scale-105 transition text-white px-6 py-3 rounded-2xl font-bold"
+      className="hover:scale-110 transition"
     >
-      X / Twitter
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png"
+        alt="Twitter X"
+        className="w-12 h-12"
+      />
     </a>
 
+    {/* YELP */}
     <a
       href="https://yelp.to/qTKq/H5OgPtRax3"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-red-600 hover:scale-105 transition text-white px-6 py-3 rounded-2xl font-bold"
+      className="hover:scale-110 transition"
     >
-      Yelp
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/174/174882.png"
+        alt="Yelp"
+        className="w-12 h-12"
+      />
     </a>
 
   </div>
