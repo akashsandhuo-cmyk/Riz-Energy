@@ -65,7 +65,7 @@ export default function CommercialPage() {
           <div>
 
             <img
-              src="https://rizenergy.com/images/s1.png"
+              src="https://rizenergy.com/images/electric-bill.png"
               alt="Commercial Energy"
               className="rounded-[40px] shadow-2xl w-full"
             />
