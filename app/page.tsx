@@ -130,7 +130,7 @@ export default function RizEnergyHomepage() {
           'https://rizenergy.com/images/think-energy.png',
           'https://rizenergy.com/images/shell-energy.png',
           'https://rizenergy.com/images/cleanskyenergy.png',
-          'https://rizenergy.com/images/spark1.png'
+          'https://rizenergy.com/images/spark1.png',
 
           // DUPLICATE FOR SMOOTH LOOP
           'https://rizenergy.com/images/g2.jpg',
