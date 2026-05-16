@@ -13,6 +13,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.rizenergy.com'),
+
   title: 'Riz Energy | Switch & Save | Electricity & Gas | Low Rates',
 
   description:
@@ -35,24 +37,22 @@ export const metadata: Metadata = {
     },
   ],
 
-  metadataBase: new URL('https://www.rizenergy.com'),
-
   openGraph: {
-    title: 'Your Electricity and Natural Gas Broker',
+    title: 'Riz Energy | Switch & Save | Electricity & Gas | Low Rates',
 
     description:
       'Switch & Save | Electricity & Gas | Low Rates',
 
-    url: 'https://www.rizenergy.com/',
+    url: 'https://www.rizenergy.com',
 
     siteName: 'Riz Energy',
 
     images: [
       {
         url: '/social.jpg',
-        width: 1024,
-        height: 1024,
-        type: 'image/jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Riz Energy',
       },
     ],
 
@@ -64,10 +64,10 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
 
-    title: 'Riz Energy | Switch & Save',
+    title: 'Riz Energy | Switch & Save | Electricity & Gas | Low Rates',
 
     description:
-      'Switch & Save | Electricity & Gas | Low Rates',
+      'Switch & Save | Electricity &Gas | Low Rates',
 
     images: ['/social.jpg'],
   },
