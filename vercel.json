@@ -1,12 +1,13 @@
 {
   "redirects": [
     {
-      "source": "http://rizenergy.com/:path*",
-      "destination": "https://www.rizenergy.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "https://rizenergy.com/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "rizenergy.com"
+        }
+      ],
       "destination": "https://www.rizenergy.com/:path*",
       "permanent": true
     }
