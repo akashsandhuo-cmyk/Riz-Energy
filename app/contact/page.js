@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Turnstile from 'react-turnstile'
+import emailjs from '@emailjs/browser'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -21,31 +22,31 @@ export default function ContactPage() {
 
     setLoading(true)
 
-    const formData = new FormData(e.target)
+    try {
+      await emailjs.sendForm(
+        'service_nic9gvb',
+        'template_iersmrp',
+        e.target,
+        'WyOzwhIozwA2Yghg2'
+      )
 
-    const response = await fetch(
-      'https://formsubmit.co/ajax/info@rizenergy.com',
-      {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-        },
-        body: formData,
-      }
-    )
-
-    if (response.ok) {
       setSubmitted(true)
       e.target.reset()
+      setVerified(false)
+
+    } catch (error) {
+      console.error(error)
+      alert('Something went wrong. Please try again.')
     }
 
     setLoading(false)
   }
 
- return (
-  <div className="bg-white text-black min-h-screen">
+  return (
+    <div className="bg-white text-black min-h-screen">
 
-    <Navbar />
+      <Navbar />
+
       {/* HERO */}
       <section className="py-24 px-6 bg-gradient-to-r from-orange-50 to-yellow-50">
 
@@ -66,9 +67,9 @@ export default function ContactPage() {
       {/* CONTACT */}
       <section className="py-24 px-6">
 
-        <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-16">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16">
 
-          {/* LEFT */}
+          {/* LEFT SIDE */}
           <div>
 
             <h2 className="text-4xl font-black mb-8">
@@ -77,124 +78,120 @@ export default function ContactPage() {
 
             <div className="space-y-6 text-lg text-gray-600">
 
-  <p>
-    📧 info@rizenergy.com
-  </p>
+              <p>
+                📧 info@rizenergy.com
+              </p>
 
-  <p>
-    📞 +1 (713) 503-3098
-  </p>
+              <p>
+                📞 +1 (713) 503-3098
+              </p>
 
-  <p>
-    📠 +1 (713) 559-8580
-  </p>
+              <p>
+                📠 +1 (713) 559-8580
+              </p>
 
-  <p>
-    📍 4615 Southwest Fwy, Suite 330
-    <br />
-    Houston, Texas USA 77027
-  </p>
+              <p>
+                📍 4615 Southwest Fwy, Suite 330
+                <br />
+                Houston, Texas USA 77027
+              </p>
 
-</div>
+            </div>
 
-{/* SOCIAL MEDIA */}
-<div className="mt-10">
+            {/* SOCIAL MEDIA */}
+            <div className="mt-12">
 
-  <h3 className="text-2xl font-black mb-6">
-    Follow Us
-  </h3>
+              <h3 className="text-2xl font-black mb-6">
+                Follow Us
+              </h3>
 
-  <div className="flex items-center gap-5 flex-wrap">
+              <div className="flex items-center gap-5 flex-wrap">
 
-    {/* FACEBOOK */}
-    <a
-      href="https://www.facebook.com/rizenergy/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-110 transition"
-    >
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-        alt="Facebook"
-        className="w-12 h-12"
-      />
-    </a>
+                <a
+                  href="https://www.facebook.com/rizenergy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                    alt="Facebook"
+                    className="w-12 h-12"
+                  />
+                </a>
 
-    {/* INSTAGRAM */}
-    <a
-      href="https://www.instagram.com/rizenergy/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-110 transition"
-    >
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-        alt="Instagram"
-        className="w-12 h-12"
-      />
-    </a>
+                <a
+                  href="https://www.instagram.com/rizenergy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                    alt="Instagram"
+                    className="w-12 h-12"
+                  />
+                </a>
 
-    {/* LINKEDIN */}
-    <a
-      href="https://www.linkedin.com/company/riz-energy"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-110 transition"
-    >
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"
-        alt="LinkedIn"
-        className="w-12 h-12"
-      />
-    </a>
+                <a
+                  href="https://www.linkedin.com/company/riz-energy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"
+                    alt="LinkedIn"
+                    className="w-12 h-12"
+                  />
+                </a>
 
-    {/* TWITTER / X */}
-    <a
-      href="https://twitter.com/rizenergy?lang=en"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-110 transition"
-    >
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png"
-        alt="Twitter X"
-        className="w-12 h-12"
-      />
-    </a>
+                <a
+                  href="https://twitter.com/rizenergy?lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png"
+                    alt="Twitter X"
+                    className="w-12 h-12"
+                  />
+                </a>
 
-    {/* YELP */}
-    <a
-      href="https://yelp.to/qTKq/H5OgPtRax3"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-110 transition"
-    >
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/174/174882.png"
-        alt="Yelp"
-        className="w-12 h-12"
-      />
-    </a>
+                <a
+                  href="https://yelp.to/qTKq/H5OgPtRax3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/174/174882.png"
+                    alt="Yelp"
+                    className="w-12 h-12"
+                  />
+                </a>
 
-  </div>
+              </div>
 
-</div>
+            </div>
 
           </div>
 
-          {/* FORM */}
+          {/* RIGHT SIDE */}
           <div>
 
             {submitted ? (
 
-              <div className="bg-green-50 border border-green-200 rounded-3xl p-10">
+              <div className="bg-green-50 border border-green-200 rounded-[40px] p-10">
 
-                <h3 className="text-3xl font-black text-green-600 mb-4">
+                <h3 className="text-4xl font-black text-green-600 mb-4">
                   Thank You!
                 </h3>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Thank you for your message. We will contact you shortly.
+                  Your message has been sent successfully.
+                  Our team will contact you shortly.
                 </p>
 
               </div>
@@ -203,46 +200,78 @@ export default function ContactPage() {
 
               <form
                 onSubmit={handleSubmit}
-                className="space-y-6"
+                className="space-y-6 bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm"
               >
 
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  required
-                  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-                />
+                <div>
 
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address"
-                  required
-                  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-                />
+                  <label className="block font-bold mb-3">
+                    Full Name
+                  </label>
 
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone Number"
-                  required
-                  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-                />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                    className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
+                  />
 
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  rows="6"
-                  required
-                  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-                ></textarea>
+                </div>
 
-                {/* CAPTCHA */}
+                <div>
+
+                  <label className="block font-bold mb-3">
+                    Email Address
+                  </label>
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                    className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
+                  />
+
+                </div>
+
+                <div>
+
+                  <label className="block font-bold mb-3">
+                    Phone Number
+                  </label>
+
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+1 (713) 000-0000"
+                    required
+                    className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
+                  />
+
+                </div>
+
+                <div>
+
+                  <label className="block font-bold mb-3">
+                    Your Message
+                  </label>
+
+                  <textarea
+                    name="message"
+                    placeholder="How can we help you?"
+                    rows="6"
+                    required
+                    className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
+                  ></textarea>
+
+                </div>
+
+                {/* TURNSTILE */}
                 <div className="pt-2">
 
                   <Turnstile
-                    sitekey="0x4AAAAAADRGYMk78b9PTndW"
+                    sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
                     onVerify={() => setVerified(true)}
                   />
 
@@ -251,9 +280,9 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-orange-500 hover:bg-orange-600 transition text-white px-8 py-4 rounded-2xl font-bold disabled:opacity-50"
+                  className="w-full bg-orange-500 hover:bg-orange-600 transition text-white px-8 py-5 rounded-2xl font-black text-lg disabled:opacity-50"
                 >
-                  {loading ? 'Sending...' : 'SEND MESSAGE'}
+                  {loading ? 'Sending Message...' : 'SEND MESSAGE'}
                 </button>
 
               </form>
