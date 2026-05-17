@@ -17,7 +17,7 @@ export default function CareersPage() {
           </h1>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join our growing team and help shape the future of energy across Texas.
+            Join our growing team & help shape the future of energy across Texas.
           </p>
 
         </div>
