@@ -94,7 +94,8 @@ export default function AboutPage() {
 
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {/* 2 MEMBERS PER ROW */}
+          <div className="grid md:grid-cols-2 gap-10">
 
             {/* TEAM MEMBER 1 */}
             <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
@@ -282,6 +283,74 @@ export default function AboutPage() {
 
                 <a
                   href="https://www.linkedin.com/in/khairunnisa-hunain-676142192"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-sky-600 transition"
+                >
+
+                  <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center font-bold">
+                    in
+                  </div>
+
+                  <span className="font-medium">
+                    LinkedIn Profile
+                  </span>
+
+                </a>
+
+              </div>
+
+            </div>
+
+            {/* TEAM MEMBER 4 */}
+            <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
+
+              <div className="flex items-center gap-6">
+
+                <img
+                  src="https://rizenergy.com/images/Hunain-Vayani.jpg"
+                  alt="Hunain Vayani"
+                  className="w-28 h-28 rounded-full object-cover"
+                />
+
+                <div>
+
+                  <h3 className="text-3xl font-black mb-2">
+                    Hunain Vayani
+                  </h3>
+
+                  <p className="text-yellow-600 font-bold text-lg">
+                    Director of Sales
+                  </p>
+
+                </div>
+
+              </div>
+
+              <p className="text-gray-600 leading-relaxed mt-8 mb-8">
+                Hunain Vayani is responsible for growing our commercial business
+                across Texas by providing low rates and superior customer service.
+              </p>
+
+              <div className="flex flex-col gap-4">
+
+                <a
+                  href="mailto:hunain@rizenergy.com"
+                  className="flex items-center gap-3 text-gray-700 hover:text-orange-500 transition"
+                >
+
+                  <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+                    ✉️
+                  </div>
+
+                  <span className="font-medium">
+                    hunain@rizenergy.com
+                  </span>
+
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/hunain-vayani-55546b40b"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-700 hover:text-sky-600 transition"
