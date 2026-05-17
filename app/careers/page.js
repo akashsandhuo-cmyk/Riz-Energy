@@ -17,37 +17,48 @@ export default function CareersPage() {
           </h1>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join our growing team and help shape the future of energy.
+            Join our growing team and help shape the future of energy across Texas.
           </p>
 
         </div>
 
       </section>
 
-      {/* JOB POSTING */}
+      {/* JOB OPENINGS */}
       <section className="py-24 px-6">
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
 
-          <div className="bg-white border border-gray-200 rounded-[40px] p-10 md:p-14 shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm">
 
-            <div className="mb-10">
+            {/* TOP */}
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-10">
 
-              <p className="text-orange-500 font-bold uppercase tracking-widest mb-4">
-                Open Position
-              </p>
+              <div>
 
-              <h2 className="text-5xl font-black mb-4">
-                Sales Consultant
-              </h2>
+                <h2 className="text-4xl font-black mb-3">
+                  Sales Consultant
+                </h2>
 
-              <p className="text-gray-500 text-lg">
-                Full Time • Houston, Texas
-              </p>
+                <p className="text-gray-500 text-lg">
+                  Full Time • Texas, USA
+                </p>
+
+              </div>
+
+              <a
+                href="/images/sales_consultant.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-orange-500 hover:bg-orange-600 transition text-white px-8 py-4 rounded-2xl font-bold inline-block text-center"
+              >
+                VIEW FULL DESCRIPTION →
+              </a>
 
             </div>
 
-            <div className="space-y-8">
+            {/* DESCRIPTION */}
+            <div className="space-y-6">
 
               <div>
 
@@ -55,32 +66,32 @@ export default function CareersPage() {
                   Job Description and Requirements
                 </h3>
 
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   As a B2B (business-to-business) outside sales position,
-                  building long-term relationships with our clients as a
-                  trusted advisor on electricity is significant.
+                  building long-term relationships with our clients as a trusted
+                  advisor on electricity is significant.
                 </p>
 
               </div>
 
-              <div className="bg-orange-50 rounded-[32px] p-8 border border-orange-100">
+              <div>
 
-                <h4 className="text-2xl font-black mb-4">
-                  How To Apply
-                </h4>
+                <h3 className="text-2xl font-black mb-4">
+                  Apply Now
+                </h3>
 
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   To apply, send your resume to:
                 </p>
 
                 <a
                   href="mailto:careers@rizenergy.com"
-                  className="text-2xl font-black text-orange-500 hover:text-orange-600 transition break-all"
+                  className="text-orange-500 font-bold text-xl hover:text-orange-600 transition"
                 >
                   careers@rizenergy.com
                 </a>
 
-                <p className="text-gray-600 mt-6">
+                <p className="text-gray-500 mt-3">
                   Please mention the position name in the subject field.
                 </p>
 
