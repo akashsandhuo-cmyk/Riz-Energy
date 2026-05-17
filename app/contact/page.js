@@ -242,7 +242,7 @@ export default function ContactPage() {
                 <div className="pt-2">
 
                   <Turnstile
-                    sitekey="0x4AAAAAADOWhVKOm_-qaivB"
+                    sitekey="0x4AAAAAADRGYMk78b9PTndW"
                     onVerify={() => setVerified(true)}
                   />
 
