@@ -12,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://www.rizenergy.com/sitemap.xml',
+    sitemap: 'https://www.rizenergy.com/sitemap.xml', 
   }
 }
