@@ -1,34 +1,42 @@
 'use client'
 
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
+import Turnstile from 'react-turnstile'
+
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export default function CommercialPage() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [verified, setVerified] = useState(false)
 
   async function handleSubmit(e) {
     e.preventDefault()
 
+    if (!verified) {
+      alert('Please verify you are human.')
+      return
+    }
+
     setLoading(true)
 
-    const formData = new FormData(e.target)
+    try {
+      await emailjs.sendForm(
+        'service_nic9gvb',
+        'template_iersmrp',
+        e.target,
+        'WyOzwhIozwA2Yghg2'
+      )
 
-    const response = await fetch(
-      'https://formsubmit.co/ajax/riz.nabi@rizenergy.com',
-      {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-        },
-        body: formData,
-      }
-    )
-
-    if (response.ok) {
       setSubmitted(true)
       e.target.reset()
+      setVerified(false)
+
+    } catch (error) {
+      console.error(error)
+      alert('Something went wrong. Please try again.')
     }
 
     setLoading(false)
@@ -72,7 +80,7 @@ export default function CommercialPage() {
 
           </div>
 
-          {/* TEXT + FORM */}
+          {/* FORM SECTION */}
           <div>
 
             <h2 className="text-5xl font-black mb-8">
@@ -98,8 +106,9 @@ export default function CommercialPage() {
                   Thank You!
                 </h3>
 
-                <p className="text-lg text-gray-700">
-                  Your file has been submitted successfully. Our team will contact you shortly.
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Your request has been submitted successfully.
+                  Our team will contact you shortly.
                 </p>
 
               </div>
@@ -108,71 +117,130 @@ export default function CommercialPage() {
 
               <form
                 onSubmit={handleSubmit}
-                className="space-y-6 bg-gray-50 border border-gray-200 rounded-3xl p-8"
+                className="space-y-6 bg-gray-50 border border-gray-200 rounded-[40px] p-8 shadow-sm"
               >
 
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  required
-                  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-                />
+                {/* FULL NAME */}
+                <div>
 
-                <input
-  type="email"
-  name="email"
-  placeholder="Email Address"
-  required
-  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-/>
+                  <label className="block font-bold mb-3">
+                    Full Name
+                  </label>
 
-<input
-  type="tel"
-  name="phone"
-  placeholder="Phone Number"
-  required
-  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-/>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                    className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
+                  />
 
-<input
-  type="text"
-  name="business"
-  placeholder="Business Name"
-  required
-  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-/>
+                </div>
 
-                <textarea
-                  name="message"
-                  placeholder="Additional Information"
-                  rows="5"
-                  className="w-full border border-gray-300 rounded-2xl px-6 py-4"
-                ></textarea>
+                {/* EMAIL */}
+                <div>
+
+                  <label className="block font-bold mb-3">
+                    Email Address
+                  </label>
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                    className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
+                  />
+
+                </div>
+
+                {/* PHONE */}
+                <div>
+
+                  <label className="block font-bold mb-3">
+                    Phone Number
+                  </label>
+
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+1 (713) 000-0000"
+                    required
+                    className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
+                  />
+
+                </div>
+
+                {/* BUSINESS */}
+                <div>
+
+                  <label className="block font-bold mb-3">
+                    Business Name
+                  </label>
+
+                  <input
+                    type="text"
+                    name="business"
+                    placeholder="Business Name"
+                    required
+                    className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
+                  />
+
+                </div>
+
+                {/* MESSAGE */}
+                <div>
+
+                  <label className="block font-bold mb-3">
+                    Additional Information
+                  </label>
+
+                  <textarea
+                    name="message"
+                    placeholder="Tell us more about your business energy needs"
+                    rows="5"
+                    className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
+                  ></textarea>
+
+                </div>
 
                 {/* FILE UPLOAD */}
                 <div>
 
                   <label className="block font-bold mb-3">
-                    Upload Electricity Bill (PDF or Image)
+                    Upload Electricity Bill
                   </label>
 
                   <input
                     type="file"
                     name="attachment"
                     accept=".pdf,image/*"
-                    required
                     className="w-full border border-gray-300 rounded-2xl px-6 py-4 bg-white"
+                  />
+
+                  <p className="text-sm text-gray-500 mt-2">
+                    Accepted formats: PDF, JPG, PNG
+                  </p>
+
+                </div>
+
+                {/* TURNSTILE */}
+                <div className="pt-2">
+
+                  <Turnstile
+                    sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+                    onVerify={() => setVerified(true)}
                   />
 
                 </div>
 
+                {/* BUTTON */}
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-orange-500 hover:bg-orange-600 transition text-white px-8 py-4 rounded-2xl font-bold disabled:opacity-50"
+                  className="w-full bg-orange-500 hover:bg-orange-600 transition text-white px-8 py-5 rounded-2xl font-black text-lg disabled:opacity-50"
                 >
-                  {loading ? 'Uploading...' : 'SUBMIT BILL'}
+                  {loading ? 'Submitting...' : 'SUBMIT BILL'}
                 </button>
 
               </form>
