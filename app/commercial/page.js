@@ -27,32 +27,28 @@ export default function CommercialPage() {
       const formData = new FormData(form)
 
       const response = await fetch(
-        'https://formspree.io/f/mqejdgrv',
-        {
-          method: 'POST',
-          body: formData,
-          headers: {
-            Accept: 'application/json',
-          },
-        }
-      )
-
-      if (response.ok) {
-        setSubmitted(true)
-        form.reset()
-        setVerified(false)
-      } else {
-        alert('Something went wrong. Please try again.')
-      }
-
-    } catch (error) {
-      console.error(error)
-      alert('Something went wrong. Please try again.')
-    }
-
-    setLoading(false)
+  'https://formspree.io/f/mqejdgrv',
+  {
+    method: 'POST',
+    body: formData,
+    headers: {
+      Accept: 'application/json',
+    },
   }
+)
 
+const data = await response.json()
+
+console.log(data)
+
+if (response.ok) {
+  setSubmitted(true)
+  form.reset()
+  setVerified(false)
+} else {
+  console.log(data)
+  alert(data?.errors?.[0]?.message || 'Something went wrong.')
+}
   return (
     <div className="bg-white text-black min-h-screen">
 
