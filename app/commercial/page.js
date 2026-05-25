@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import emailjs from '@emailjs/browser'
 import Turnstile from 'react-turnstile'
 
 import Navbar from '../components/Navbar'
@@ -12,7 +11,7 @@ export default function CommercialPage() {
   const [loading, setLoading] = useState(false)
   const [verified, setVerified] = useState(false)
 
-  async function handleSubmit(e) {
+  async function handleSubmit(e: any) {
     e.preventDefault()
 
     if (!verified) {
@@ -23,16 +22,28 @@ export default function CommercialPage() {
     setLoading(true)
 
     try {
-      await emailjs.sendForm(
-        'service_nic9gvb',
-        'template_iersmrp',
-        e.target,
-        'WyOzwhIozwA2Yghg2'
+      const form = e.target
+
+      const formData = new FormData(form)
+
+      const response = await fetch(
+        'https://formspree.io/f/mqejdgrv',
+        {
+          method: 'POST',
+          body: formData,
+          headers: {
+            Accept: 'application/json',
+          },
+        }
       )
 
-      setSubmitted(true)
-      e.target.reset()
-      setVerified(false)
+      if (response.ok) {
+        setSubmitted(true)
+        form.reset()
+        setVerified(false)
+      } else {
+        alert('Something went wrong. Please try again.')
+      }
 
     } catch (error) {
       console.error(error)
@@ -88,7 +99,7 @@ export default function CommercialPage() {
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Please upload or email us a copy of your most recent bill so we can provide you with a quote for your business.
+              Please upload or email us a copy of your most recent electricity bill so we can provide you with a custom commercial energy quote.
             </p>
 
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -117,6 +128,7 @@ export default function CommercialPage() {
 
               <form
                 onSubmit={handleSubmit}
+                encType="multipart/form-data"
                 className="space-y-6 bg-gray-50 border border-gray-200 rounded-[40px] p-8 shadow-sm"
               >
 
@@ -198,7 +210,7 @@ export default function CommercialPage() {
                   <textarea
                     name="message"
                     placeholder="Tell us more about your business energy needs"
-                    rows="5"
+                    rows={5}
                     className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
                   ></textarea>
 
@@ -215,6 +227,7 @@ export default function CommercialPage() {
                     type="file"
                     name="attachment"
                     accept=".pdf,image/*"
+                    required
                     className="w-full border border-gray-300 rounded-2xl px-6 py-4 bg-white"
                   />
 
@@ -228,7 +241,9 @@ export default function CommercialPage() {
                 <div className="pt-2">
 
                   <Turnstile
-                    sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+                    sitekey={
+                      process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY as string
+                    }
                     onVerify={() => setVerified(true)}
                   />
 
