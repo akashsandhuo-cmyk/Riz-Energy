@@ -27,28 +27,39 @@ export default function CommercialPage() {
       const formData = new FormData(form)
 
       const response = await fetch(
-  'https://formspree.io/f/mqejdgrv',
-  {
-    method: 'POST',
-    body: formData,
-    headers: {
-      Accept: 'application/json',
-    },
+        'https://formspree.io/f/mqejdgrv',
+        {
+          method: 'POST',
+          body: formData,
+          headers: {
+            Accept: 'application/json',
+          },
+        }
+      )
+
+      const data = await response.json()
+
+      console.log(data)
+
+      if (response.ok) {
+        setSubmitted(true)
+        form.reset()
+        setVerified(false)
+      } else {
+        console.log(data)
+        alert(
+          data?.errors?.[0]?.message ||
+            'Something went wrong. Please try again.'
+        )
+      }
+    } catch (error) {
+      console.error(error)
+      alert('Something went wrong. Please try again.')
+    }
+
+    setLoading(false)
   }
-)
 
-const data = await response.json()
-
-console.log(data)
-
-if (response.ok) {
-  setSubmitted(true)
-  form.reset()
-  setVerified(false)
-} else {
-  console.log(data)
-  alert(data?.errors?.[0]?.message || 'Something went wrong.')
-}
   return (
     <div className="bg-white text-black min-h-screen">
 
@@ -106,7 +117,6 @@ if (response.ok) {
             </p>
 
             {submitted ? (
-
               <div className="bg-green-50 border border-green-200 rounded-3xl p-10">
 
                 <h3 className="text-3xl font-black text-green-600 mb-4">
@@ -119,9 +129,7 @@ if (response.ok) {
                 </p>
 
               </div>
-
             ) : (
-
               <form
                 onSubmit={handleSubmit}
                 encType="multipart/form-data"
@@ -253,7 +261,6 @@ if (response.ok) {
                 </button>
 
               </form>
-
             )}
 
           </div>
