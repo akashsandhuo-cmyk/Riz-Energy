@@ -249,9 +249,11 @@ export default function RizEnergyHomepage() {
                   {service.desc}
                 </p>
 
-                <button className={`font-bold ${service.color}`}>
-                  LEARN MORE →
-                </button>
+                <a
+                href="/about"
+                  className={`font-bold ${service.color} inline-block`}>                
+                    LEARN MORE →
+                      </a>
 
               </div>
 
