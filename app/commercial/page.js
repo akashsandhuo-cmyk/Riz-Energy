@@ -11,7 +11,7 @@ export default function CommercialPage() {
   const [loading, setLoading] = useState(false)
   const [verified, setVerified] = useState(false)
 
-  async function handleSubmit(e: any) {
+  async function handleSubmit(e) {
     e.preventDefault()
 
     if (!verified) {
@@ -210,7 +210,7 @@ export default function CommercialPage() {
                   <textarea
                     name="message"
                     placeholder="Tell us more about your business energy needs"
-                    rows={5}
+                    rows="5"
                     className="w-full border border-gray-300 rounded-2xl px-6 py-4 outline-none focus:border-orange-500"
                   ></textarea>
 
@@ -241,9 +241,7 @@ export default function CommercialPage() {
                 <div className="pt-2">
 
                   <Turnstile
-                    sitekey={
-                      process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY as string
-                    }
+                    sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
                     onVerify={() => setVerified(true)}
                   />
 
