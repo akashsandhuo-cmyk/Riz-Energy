@@ -376,7 +376,7 @@ export default function AboutPage() {
   <div className="flex items-center gap-6">
 
     <img
-      src="https://rizenergy.com/images/Camille-Alexander.jpeg"
+      src="https://rizenergy.com/images/Camille.png"
       alt="Camille Alexander"
       className="w-28 h-28 rounded-full object-cover"
     />
