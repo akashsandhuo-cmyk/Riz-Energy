@@ -438,7 +438,75 @@ export default function AboutPage() {
   </div>
 
 </div>
+    {/* TEAM MEMBER 6 */}
+<div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
 
+  <div className="flex items-center gap-6">
+
+    <img
+      src="https://rizenergy.com/images/Juliana.jpeg"
+      alt="Juliana Herrera"
+      className="w-28 h-28 rounded-full object-cover"
+    />
+
+    <div>
+
+      <h3 className="text-3xl font-black mb-2">
+        Juliana Herrera
+      </h3>
+
+      <p className="text-purple-600 font-bold text-lg">
+        Director of Investor Relations
+      </p>
+
+    </div>
+
+  </div>
+
+  <p className="text-gray-600 leading-relaxed mt-8 mb-8">
+    Juliana Herrera is responsible for communications with our investors
+    and presenting our financials and company strategy. She helps build
+    strong relationships with stakeholders while supporting the company's
+    long-term growth and vision.
+  </p>
+
+  <div className="flex flex-col gap-4">
+
+    <a
+      href="mailto:juliana@rizenergy.com"
+      className="flex items-center gap-3 text-gray-700 hover:text-orange-500 transition"
+    >
+
+      <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+        ✉️
+      </div>
+
+      <span className="font-medium">
+        juliana@rizenergy.com
+      </span>
+
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/juliana-herrera-b45a08415"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-3 text-gray-700 hover:text-sky-600 transition"
+    >
+
+      <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center font-bold">
+        in
+      </div>
+
+      <span className="font-medium">
+        LinkedIn Profile
+      </span>
+
+    </a>
+
+  </div>
+
+</div>
           </div>
 
         </div>
