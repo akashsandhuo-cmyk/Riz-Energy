@@ -30,7 +30,7 @@ const partners = [
   {
     name: 'True Power',
     image: 'https://rizenergy.com/images/truepower.png',
-    link: 'https://www.truepower.com/partner/riz-energy/',
+    link: 'https://truepower.com/broker/RIZ-ENERGY',
   },
   {
     name: 'Constellation',
