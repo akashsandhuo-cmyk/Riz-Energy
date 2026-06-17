@@ -507,6 +507,76 @@ export default function AboutPage() {
   </div>
 
 </div>
+
+        {/* TEAM MEMBER 7 */}
+<div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
+
+  <div className="flex items-center gap-6">
+
+    <img
+      src="https://rizenergy.com/images/Khalissa.jpeg"
+      alt="Khalissa Zelilef"
+      className="w-28 h-28 rounded-full object-cover"
+    />
+
+    <div>
+
+      <h3 className="text-3xl font-black mb-2">
+        Khalissa Zelilef
+      </h3>
+
+      <p className="text-emerald-600 font-bold text-lg">
+        Sales Manager
+      </p>
+
+    </div>
+
+  </div>
+
+  <p className="text-gray-600 leading-relaxed mt-8 mb-8">
+    Khalissa Zelilef heads our customer service department and interacts
+    with our customers on a daily basis. She is responsible for managing
+    client contracts, renewals, and ensuring an exceptional customer
+    experience throughout the entire energy enrollment process.
+  </p>
+
+  <div className="flex flex-col gap-4">
+
+    <a
+      href="mailto:khalissa@rizenergy.com"
+      className="flex items-center gap-3 text-gray-700 hover:text-orange-500 transition"
+    >
+
+      <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+        ✉️
+      </div>
+
+      <span className="font-medium">
+        khalissa@rizenergy.com
+      </span>
+
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/khalissa-zelilef-544246176"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-3 text-gray-700 hover:text-sky-600 transition"
+    >
+
+      <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center font-bold">
+        in
+      </div>
+
+      <span className="font-medium">
+        LinkedIn Profile
+      </span>
+
+    </a>
+
+  </div>
+
+</div>
           </div>
 
         </div>
