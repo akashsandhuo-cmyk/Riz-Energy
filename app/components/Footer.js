@@ -121,9 +121,9 @@ export default function Footer() {
             </li>
 
             <li>
-              📍 4615 Southwest Fwy, Suite 330
+              📍 10765 Gulf Freeway
               <br />
-              Houston, Texas USA 77027
+              Houston, Texas USA 77034
             </li>
 
           </ul>
