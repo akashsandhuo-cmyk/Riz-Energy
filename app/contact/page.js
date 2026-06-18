@@ -91,9 +91,9 @@ export default function ContactPage() {
               </p>
 
               <p>
-                📍 4615 Southwest Fwy, Suite 330
+                📍 10765 Gulf Freeway
                 <br />
-                Houston, Texas USA 77027
+                Houston, Texas USA 77034
               </p>
 
             </div>
