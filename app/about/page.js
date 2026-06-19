@@ -328,8 +328,8 @@ export default function AboutPage() {
   </div>
 
   <p className="text-gray-600 leading-relaxed mt-8 mb-8">
-    Juliana Herrera is responsible for growing our commercial business
-    across Texas by providing low rates and superior customer service.
+    Juliana Herrera is responsible for growing our commercial business across Texas by providing low rates and superior customer service. 
+    Fluent in both English and Spanish, she works closely with clients to deliver personalized energy solutions and an exceptional customer experience.
   </p>
 
   <div className="flex flex-col gap-4">
