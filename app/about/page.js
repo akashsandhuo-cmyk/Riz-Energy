@@ -233,144 +233,8 @@ export default function AboutPage() {
 
             </div>
 
-            {/* TEAM MEMBER 3 */}
-            <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
-
-              <div className="flex items-center gap-6">
-
-                <img
-                  src="https://rizenergy.com/images/NISHA.jpeg"
-                  alt="Khairunnisa Hunain"
-                  className="w-28 h-28 rounded-full object-cover"
-                />
-
-                <div>
-
-                  <h3 className="text-3xl font-black mb-2">
-                    Khairunnisa Hunain
-                  </h3>
-
-                  <p className="text-lime-600 font-bold text-lg">
-                    Managing Director
-                  </p>
-
-                </div>
-
-              </div>
-
-              <p className="text-gray-600 leading-relaxed mt-8 mb-8">
-                Khairunnisa Hunain leads operations and business growth initiatives,
-                helping Riz Energy deliver exceptional customer service and smarter
-                energy solutions across Texas.
-              </p>
-
-              <div className="flex flex-col gap-4">
-
-                <a
-                  href="mailto:nisha@rizenergy.com"
-                  className="flex items-center gap-3 text-gray-700 hover:text-orange-500 transition"
-                >
-
-                  <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
-                    ✉️
-                  </div>
-
-                  <span className="font-medium">
-                    nisha@rizenergy.com
-                  </span>
-
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/khairunnisa-hunain-676142192"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-700 hover:text-sky-600 transition"
-                >
-
-                  <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center font-bold">
-                    in
-                  </div>
-
-                  <span className="font-medium">
-                    LinkedIn Profile
-                  </span>
-
-                </a>
-
-              </div>
-
-            </div>
-
-            {/* TEAM MEMBER 4 */}
-            <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
-
-              <div className="flex items-center gap-6">
-
-                <img
-                  src="https://rizenergy.com/images/Hunain-Vayani.jpg"
-                  alt="Hunain Vayani"
-                  className="w-28 h-28 rounded-full object-cover"
-                />
-
-                <div>
-
-                  <h3 className="text-3xl font-black mb-2">
-                    Hunain Vayani
-                  </h3>
-
-                  <p className="text-yellow-600 font-bold text-lg">
-                    Director of Sales
-                  </p>
-
-                </div>
-
-              </div>
-
-              <p className="text-gray-600 leading-relaxed mt-8 mb-8">
-                Hunain Vayani is responsible for growing our commercial business
-                across Texas by providing low rates and superior customer service.
-              </p>
-
-              <div className="flex flex-col gap-4">
-
-                <a
-                  href="mailto:hunain@rizenergy.com"
-                  className="flex items-center gap-3 text-gray-700 hover:text-orange-500 transition"
-                >
-
-                  <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
-                    ✉️
-                  </div>
-
-                  <span className="font-medium">
-                    hunain@rizenergy.com
-                  </span>
-
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/hunain-vayani-55546b40b"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-700 hover:text-sky-600 transition"
-                >
-
-                  <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center font-bold">
-                    in
-                  </div>
-
-                  <span className="font-medium">
-                    LinkedIn Profile
-                  </span>
-
-                </a>
-
-              </div>
-
-            </div>
-
-                    {/* TEAM MEMBER 5 */}
+            
+            {/* TEAM MEMBER  3*/}
 <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
 
   <div className="flex items-center gap-6">
@@ -438,7 +302,7 @@ export default function AboutPage() {
   </div>
 
 </div>
-    {/* TEAM MEMBER 6 */}
+    {/* TEAM MEMBER 4 */}
 <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
 
   <div className="flex items-center gap-6">
@@ -456,7 +320,7 @@ export default function AboutPage() {
       </h3>
 
       <p className="text-purple-600 font-bold text-lg">
-        Director of Investor Relations
+        Director of Sales
       </p>
 
     </div>
@@ -464,10 +328,8 @@ export default function AboutPage() {
   </div>
 
   <p className="text-gray-600 leading-relaxed mt-8 mb-8">
-    Juliana Herrera is responsible for communications with our investors
-    and presenting our financials and company strategy. She helps build
-    strong relationships with stakeholders while supporting the company's
-    long-term growth and vision.
+    Juliana Herrera is responsible for growing our commercial business
+    across Texas by providing low rates and superior customer service.
   </p>
 
   <div className="flex flex-col gap-4">
@@ -508,7 +370,7 @@ export default function AboutPage() {
 
 </div>
 
-        {/* TEAM MEMBER 7 */}
+        {/* TEAM MEMBER 5 */}
 <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
 
   <div className="flex items-center gap-6">
