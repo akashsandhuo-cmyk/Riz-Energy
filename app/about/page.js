@@ -260,7 +260,7 @@ export default function AboutPage() {
               </div>
 
               <p className="text-gray-600 leading-relaxed mt-8 mb-8">
-                Saira Rizvi leads our East Coat operations and is based out of Philadelphia.
+                Saira Rizvi leads our East Coast operations and is based out of Philadelphia.
                 Ms. Rizvi is responsible for growing our customer base in all North East deregulated markets.
               </p>
 
