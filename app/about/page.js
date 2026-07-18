@@ -233,8 +233,77 @@ export default function AboutPage() {
 
             </div>
 
+
+  {/* TEAM MEMBER 3 */}
+            <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
+
+              <div className="flex items-center gap-6">
+
+                <img
+                  src="https://www.rizenergy.com/images/Sara-Rizvi.jpg"
+                  alt="Saira Rizvi"
+                  className="w-28 h-28 rounded-full object-cover"
+                />
+
+                <div>
+
+                  <h3 className="text-3xl font-black mb-2">
+                    Saira Rizvi
+                  </h3>
+
+                  <p className="text-sky-500 font-bold text-lg">
+                    Senior Vice President
+                  </p>
+
+                </div>
+
+              </div>
+
+              <p className="text-gray-600 leading-relaxed mt-8 mb-8">
+                Saira Rizvi leads our East Coat operations and is based out of Philadelphia.
+                Ms. Rizvi is responsible for growing our customer base in all North East deregulated markets.
+              </p>
+
+              <div className="flex flex-col gap-4">
+
+                <a
+                  href="mailto:saira@rizenergy.com"
+                  className="flex items-center gap-3 text-gray-700 hover:text-orange-500 transition"
+                >
+
+                  <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+                    ✉️
+                  </div>
+
+                  <span className="font-medium">
+                    saira@rizenergy.com
+                  </span>
+
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/saira-rizvi-27a7b8181/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-sky-600 transition"
+                >
+
+                  <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center font-bold">
+                    in
+                  </div>
+
+                  <span className="font-medium">
+                    LinkedIn Profile
+                  </span>
+
+                </a>
+
+              </div>
+
+            </div>
+
             
-            {/* TEAM MEMBER  3*/}
+            {/* TEAM MEMBER  4*/}
 <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
 
   <div className="flex items-center gap-6">
@@ -302,7 +371,7 @@ export default function AboutPage() {
   </div>
 
 </div>
-    {/* TEAM MEMBER 4 */}
+    {/* TEAM MEMBER 5 */}
 <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
 
   <div className="flex items-center gap-6">
@@ -370,7 +439,7 @@ export default function AboutPage() {
 
 </div>
 
-        {/* TEAM MEMBER 5 */}
+        {/* TEAM MEMBER 6 */}
 <div className="bg-white border border-gray-200 rounded-[40px] p-10 shadow-sm hover:shadow-xl transition">
 
   <div className="flex items-center gap-6">
